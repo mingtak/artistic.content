@@ -1,0 +1,41 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="artistic.content">
+
+    <browser:viewlet
+      name="schoolinfo_listing"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+      template="schoolinfo_listing.pt"
+      class=".viewlets.SchoolInfoListing"
+      permission="zope2.View"
+      />
+
+    <browser:viewlet
+      name="subproject"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+      template="subproject.pt"
+      class=".viewlets.SubProject"
+      permission="zope2.View"
+      />
+
+    <browser:viewlet
+      name="coverslider"
+      for="artistic.content.interfaces.ICover"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+      template="coverslider.pt"
+      class=".viewlets.CoverSlider"
+      permission="zope2.View"
+      />
+
+
+    <browser:viewlet
+      name="loginandlang"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      template="loginandlang.pt"
+      class=".viewlets.LoginAndLang"
+      permission="zope2.View"
+      />
+
+</configure>

@@ -2,6 +2,7 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     i18n_domain="artistic.content">
 
@@ -10,7 +11,7 @@
   <i18n:registerTranslations directory="locales" />
 
   <include package=".browser" />
-
+  <include package=".viewlet" />
 
   <genericsetup:registerProfile
       name="default"
@@ -45,5 +46,13 @@
   <utility
       factory=".setuphandlers.HiddenProfiles"
       name="artistic.content-hiddenprofiles" />
+
+  <!-- Adapter for catalog -->
+  <adapter name="city" factory=".catalog.city_indexer" />
+  <adapter name="artClassfication" factory=".catalog.artClassfication_indexer" />
+  <adapter name="whoCanEditor" factory=".catalog.whoCanEditor_indexer" />
+  <adapter name="years" factory=".catalog.years_indexer" />
+  <adapter name="url" factory=".catalog.url_indexer" />
+  <adapter name="hrid" factory=".catalog.hrid_indexer" />
 
 </configure>

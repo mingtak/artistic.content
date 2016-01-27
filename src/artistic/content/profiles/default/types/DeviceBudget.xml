@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<object name="HrDb" meta_type="Dexterity FTI" i18n:domain="artistic.content"
+<object name="DeviceBudget" meta_type="Dexterity FTI" i18n:domain="artistic.content"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
-  <property name="title" i18n:translate="">HrDb</property>
+  <property name="title" i18n:translate="">DeviceBudget</property>
   <property name="description"
     i18n:translate=""></property>
   <property name="icon_expr"></property>
-  <property name="factory">HrDb</property>
-  <property name="add_view_expr">string:${folder_url}/++add++HrDb</property>
+  <property name="factory">DeviceBudget</property>
+  <property name="add_view_expr">string:${folder_url}/++add++DeviceBudget</property>
   <property name="link_target"></property>
   <property name="immediate_view">view</property>
   <property name="global_allow">True</property>
@@ -23,9 +23,8 @@
   <property name="klass">plone.dexterity.content.Item</property>
   <property name="behaviors">
     <element value="plone.app.content.interfaces.INameFromTitle"/>
-    <element value="collective.dexteritytextindexer.behavior.IDexterityTextIndexer" />
   </property>
-  <property name="schema">artistic.content.interfaces.IHrDb</property>
+  <property name="schema">artistic.content.interfaces.IDeviceBudget</property>
   <property name="model_source"></property>
   <property name="model_file"></property>
   <alias from="(Default)" to="(dynamic view)"/>

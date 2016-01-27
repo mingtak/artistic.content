@@ -48,6 +48,8 @@ setup(
         'z3c.jbot',
         'plone.app.dexterity',
         'plone.directives.form',
+        'plone.formwidget.autocomplete',
+        'plone.principalsource',
     ],
     extras_require={
         'test': [

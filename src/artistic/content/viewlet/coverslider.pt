@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    i18n:domain="artistic.content">
+
+
+<div id="cover_slider" tal:condition="context/@@is_anonymous">
+
+                        <div class="main_slider">
+                            <!-- Slide -->
+                            <div class="owl-item slide" tal:repeat="item python:[('slider1', context.slogan1),
+                                                                        ('slider2', context.slogan2),
+                                                                        ('slider3', context.slogan3),]">
+                                <img tal:attributes="src python:'%s/@@images/%s' % (context.absolute_url(), item[0]);
+                                                     alt python:item[1]">
+                                <div class="slide_content">
+                                    <h3><a tal:content="python:item[1]"/></h3>
+                                </div>
+                            </div>
+                        </div>
+
+</div>
+
+</html>

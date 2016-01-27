@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-12-19 10:33+0000\n"
+"POT-Creation-Date: 2015-12-28 01:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,47 +14,143 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ./config.py:63
+#: ./config.py:7
+msgid "2016"
+msgstr ""
+
+#: ./config.py:8
+msgid "2017"
+msgstr ""
+
+#: ./config.py:9
+msgid "2018"
+msgstr ""
+
+#: ./config.py:10
+msgid "2019"
+msgstr ""
+
+#: ./config.py:11
+msgid "2020"
+msgstr ""
+
+#: ./config.py:90
 msgid "All Cities"
 msgstr ""
 
-#: ./interfaces.py:30
+#: ./interfaces.py:214
+msgid "Art Classfication"
+msgstr ""
+
+#: ./viewlet/schoolinfo_listing.pt:19
+msgid "Art School Introduction"
+msgstr ""
+
+#: ./interfaces.py:348
 msgid "Artistic Organization"
 msgstr ""
 
-#: ./interfaces.py:20
+#: ./interfaces.py:167
+msgid "Assign Editor"
+msgstr ""
+
+#: ./interfaces.py:146
 msgid "Basic"
 msgstr ""
 
-#: ./interfaces.py:45
+#: ./config.py:16
+msgid "Basic Device"
+msgstr ""
+
+#: ./interfaces.py:138
+msgid "Budget"
+msgstr ""
+
+#: ./interfaces.py:365
 msgid "Category information"
 msgstr ""
 
-#: ./config.py:72
+#: ./config.py:99
 msgid "Changhua County"
 msgstr ""
 
-#: ./config.py:75
+#: ./config.py:102
 msgid "Chiayi City"
 msgstr ""
 
-#: ./config.py:76
+#: ./config.py:103
 msgid "Chiayi County"
 msgstr ""
 
-#: ./interfaces.py:79
+#: ./interfaces.py:173
 msgid "City"
 msgstr ""
 
-#: ./interfaces.py:40
-msgid "Email Address"
+#: ./interfaces.py:296
+msgid "Classes Introduction"
 msgstr ""
 
-#: ./interfaces.py:66
-msgid "Experitse"
+#: ./profiles/default/types/Cover.xml
+msgid "Cover"
+msgstr ""
+
+#: ./interfaces.py:82
+msgid "Cover Slider 1"
+msgstr ""
+
+#: ./interfaces.py:94
+msgid "Cover Slider 2"
+msgstr ""
+
+#: ./interfaces.py:106
+msgid "Cover Slider 3"
+msgstr ""
+
+#: ./interfaces.py:89
+msgid "Cover Slogan 1"
+msgstr ""
+
+#: ./interfaces.py:101
+msgid "Cover Slogan 2"
+msgstr ""
+
+#: ./interfaces.py:113
+msgid "Cover Slogan 3"
 msgstr ""
 
 #: ./interfaces.py:51
+msgid "Description"
+msgstr ""
+
+#: ./interfaces.py:132
+msgid "Device Classfication"
+msgstr ""
+
+#: ./interfaces.py:121
+msgid "Device Name"
+msgstr ""
+
+#: ./profiles/default/types/DeviceBudget.xml
+msgid "DeviceBudget"
+msgstr ""
+
+#: ./interfaces.py:360
+msgid "Email Address"
+msgstr ""
+
+#: ./browser/template/cover_view.pt:52
+msgid "Event Information"
+msgstr ""
+
+#: ./interfaces.py:387
+msgid "Experitse"
+msgstr ""
+
+#: ./config.py:17
+msgid "Extension Device"
+msgstr ""
+
+#: ./interfaces.py:371
 msgid "HR Classfication"
 msgstr ""
 
@@ -62,278 +158,500 @@ msgstr ""
 msgid "HrDb"
 msgstr ""
 
-#: ./config.py:69
+#: ./config.py:96
 msgid "Hsinchu City"
 msgstr ""
 
-#: ./config.py:68
+#: ./config.py:95
 msgid "Hsinchu County"
 msgstr ""
 
-#: ./config.py:81
+#: ./config.py:108
 msgid "Hualien County"
 msgstr ""
 
-#: ./configure.zcml:21
+#: ./interfaces.py:83
+msgid "Image Size must be 720X400(W:H)"
+msgstr ""
+
+#: ./configure.zcml:22
 msgid "Installs the artistic.content add-on."
 msgstr ""
 
-#: ./config.py:78
+#: ./interfaces.py:305
+msgid "Introduction"
+msgstr ""
+
+#: ./config.py:105
 msgid "Kaohsiung City"
 msgstr ""
 
-#: ./config.py:65
+#: ./config.py:92
 msgid "Keelung City"
 msgstr ""
 
-#: ./config.py:84
+#: ./config.py:111
 msgid "Kinmen County"
 msgstr ""
 
-#: ./config.py:85
+#: ./browser/template/cover_view.pt:19
+msgid "Latest News"
+msgstr ""
+
+#: ./config.py:112
 msgid "Lienchiang County"
 msgstr ""
 
-#: ./config.py:70
+#: ./interfaces.py:262
+msgid "Manager 1's Extension"
+msgstr ""
+
+#: ./interfaces.py:257
+msgid "Manager 1's Name"
+msgstr ""
+
+#: ./interfaces.py:272
+msgid "Manager 2's Extension"
+msgstr ""
+
+#: ./interfaces.py:267
+msgid "Manager 2's Name"
+msgstr ""
+
+#: ./interfaces.py:281
+msgid "Manager 3's Extension"
+msgstr ""
+
+#: ./interfaces.py:276
+msgid "Manager 3's Name"
+msgstr ""
+
+#: ./interfaces.py:291
+msgid "Manager 4's Extension"
+msgstr ""
+
+#: ./interfaces.py:286
+msgid "Manager 4's Name"
+msgstr ""
+
+#: ./config.py:97
 msgid "Miaoli County"
 msgstr ""
 
-#: ./interfaces.py:25
+#: ./interfaces.py:64
+msgid "Must be include http:// or https://"
+msgstr ""
+
+#: ./interfaces.py:242
+msgid "Must include http:// or https://"
+msgstr ""
+
+#: ./interfaces.py:343
 msgid "Name"
 msgstr ""
 
-#: ./config.py:73
+#: ./config.py:100
 msgid "Nantou County"
 msgstr ""
 
-#: ./config.py:64
+#: ./config.py:91
 msgid "New Taipei City"
 msgstr ""
 
-#: ./config.py:83
+#: ./interfaces.py:312
+msgid "Old Image Folder id"
+msgstr ""
+
+#: ./config.py:110
 msgid "Penghu County"
 msgstr ""
 
-#: ./config.py:79
+#: ./config.py:106
 msgid "Pingtung County"
 msgstr ""
 
-#: ./interfaces.py:73
-msgid "Service Cities"
+#: ./interfaces.py:317
+msgid "Please upload an image"
 msgstr ""
 
-#: ./interfaces.py:58
-msgid "Service Level"
+#: ./interfaces.py:252
+msgid "Principal Extension"
 msgstr ""
 
-#: ./interfaces.py:35
-msgid "Service Organization"
-msgstr ""
-
-#: ./config.py:71
-msgid "Taichung City"
-msgstr ""
-
-#: ./config.py:77
-msgid "Tainan City"
-msgstr ""
-
-#: ./config.py:66
-msgid "Taipei City"
-msgstr ""
-
-#: ./config.py:82
-msgid "Taitung County"
-msgstr ""
-
-#: ./config.py:67
-msgid "Taoyuan City"
-msgstr ""
-
-#: ./configure.zcml:36
-msgid "Uninstalls the artistic.content add-on."
-msgstr ""
-
-#: ./config.py:80
-msgid "Yilan County"
-msgstr ""
-
-#: ./config.py:74
-msgid "Yunlin County"
-msgstr ""
-
-#: ./config.py:58
-msgid "artOrg"
-msgstr ""
-
-#: ./config.py:57
-msgid "artist"
-msgstr ""
-
-#: ./configure.zcml:21
-msgid "artistic.content"
-msgstr ""
-
-#: ./config.py:56
-msgid "experts"
-msgstr ""
-
-#: ./config.py:8
-msgid "help_exp_01"
-msgstr ""
-
-#: ./config.py:9
-msgid "help_exp_02"
-msgstr ""
-
-#: ./config.py:10
-msgid "help_exp_03"
-msgstr ""
-
-#: ./config.py:11
-msgid "help_exp_04"
-msgstr ""
-
-#: ./config.py:12
-msgid "help_exp_05"
-msgstr ""
-
-#: ./config.py:13
-msgid "help_exp_06"
-msgstr ""
-
-#: ./config.py:14
-msgid "help_exp_07"
-msgstr ""
-
-#: ./config.py:15
-msgid "help_exp_08"
-msgstr ""
-
-#: ./config.py:16
-msgid "help_exp_09"
-msgstr ""
-
-#: ./config.py:17
-msgid "help_exp_10"
-msgstr ""
-
-#: ./config.py:18
-msgid "help_exp_11"
-msgstr ""
-
-#: ./config.py:19
-msgid "help_exp_12"
-msgstr ""
-
-#: ./config.py:20
-msgid "help_exp_13"
-msgstr ""
-
-#: ./config.py:21
-msgid "help_exp_14"
-msgstr ""
-
-#: ./config.py:22
-msgid "help_exp_15"
-msgstr ""
-
-#: ./config.py:23
-msgid "help_exp_16"
-msgstr ""
-
-#: ./config.py:24
-msgid "help_exp_17"
-msgstr ""
-
-#: ./config.py:25
-msgid "help_exp_18"
-msgstr ""
-
-#: ./config.py:26
-msgid "help_exp_19"
-msgstr ""
-
-#: ./config.py:27
-msgid "help_exp_20"
-msgstr ""
-
-#: ./config.py:28
-msgid "help_exp_21"
-msgstr ""
-
-#: ./config.py:29
-msgid "help_exp_22"
+#: ./interfaces.py:247
+msgid "Principal Name"
 msgstr ""
 
 #: ./config.py:30
-msgid "help_exp_23"
+msgid "Private School"
 msgstr ""
 
-#: ./config.py:31
-msgid "help_exp_24"
+#: ./interfaces.py:46
+msgid "Project Title"
 msgstr ""
 
-#: ./config.py:32
-msgid "help_exp_25"
+#: ./config.py:29
+msgid "Public School"
 msgstr ""
 
-#: ./config.py:33
-msgid "help_exp_26"
+#: ./interfaces.py:187
+msgid "Public or Private School"
 msgstr ""
 
-#: ./config.py:34
-msgid "help_exp_27"
+#: ./browser/template/cover_view.pt:73
+msgid "Published"
+msgstr ""
+
+#: ./interfaces.py:318
+msgid "Recommend that all use the same size photo"
+msgstr ""
+
+#: ./interfaces.py:230
+msgid "School Address"
+msgstr ""
+
+#: ./browser/template/schoolinfo_view.pt:31
+msgid "School Address:"
+msgstr ""
+
+#: ./interfaces.py:236
+msgid "School District"
+msgstr ""
+
+#: ./interfaces.py:225
+msgid "School Fax Number"
+msgstr ""
+
+#: ./interfaces.py:193
+msgid "School Information"
+msgstr ""
+
+#: ./browser/template/schoolinfo_view.pt:47
+msgid "School Introduction:"
+msgstr ""
+
+#: ./interfaces.py:180
+msgid "School Level"
+msgstr ""
+
+#: ./interfaces.py:156
+msgid "School Name"
+msgstr ""
+
+#: ./interfaces.py:220
+msgid "School Phone Number"
+msgstr ""
+
+#: ./browser/template/schoolinfo_view.pt:36
+msgid "School TEL:"
+msgstr ""
+
+#: ./interfaces.py:241
+msgid "School URL"
+msgstr ""
+
+#: ./browser/template/schoolinfo_view.pt:41
+msgid "School Website:"
+msgstr ""
+
+#: ./interfaces.py:161
+msgid "School short description"
+msgstr ""
+
+#: ./profiles/default/types/SchoolInfo.xml
+msgid "SchoolInfo"
+msgstr ""
+
+#: ./interfaces.py:394
+msgid "Service Cities"
+msgstr ""
+
+#: ./interfaces.py:378
+msgid "Service Level"
+msgstr ""
+
+#: ./interfaces.py:355
+msgid "Service Organization"
+msgstr ""
+
+#: ./exclfromnav.py:19
+msgid "Settings"
+msgstr ""
+
+#: ./interfaces.py:56
+msgid "Sub Project Image"
+msgstr ""
+
+#: ./interfaces.py:63
+msgid "Sub Project Website URL."
+msgstr ""
+
+#: ./viewlet/subproject.pt:25
+msgid "Sub Projects"
+msgstr ""
+
+#: ./profiles/default/types/SubProject.xml
+msgid "SubProject"
+msgstr ""
+
+#: ./config.py:98
+msgid "Taichung City"
+msgstr ""
+
+#: ./config.py:104
+msgid "Tainan City"
+msgstr ""
+
+#: ./config.py:93
+msgid "Taipei City"
+msgstr ""
+
+#: ./config.py:109
+msgid "Taitung County"
+msgstr ""
+
+#: ./config.py:94
+msgid "Taoyuan City"
+msgstr ""
+
+#: ./interfaces.py:72
+msgid "Title"
+msgstr ""
+
+#: ./configure.zcml:37
+msgid "Uninstalls the artistic.content add-on."
+msgstr ""
+
+#: ./interfaces.py:40
+msgid "Wrong! Image Size must be 720X400(W:H)"
+msgstr ""
+
+#: ./interfaces.py:31
+msgid "Wrong! width:height must be 1:1."
+msgstr ""
+
+#: ./interfaces.py:126
+msgid "Years"
+msgstr ""
+
+#: ./config.py:107
+msgid "Yilan County"
+msgstr ""
+
+#: ./config.py:101
+msgid "Yunlin County"
+msgstr ""
+
+#: ./config.py:85
+msgid "artOrg"
+msgstr ""
+
+#: ./config.py:84
+msgid "artist"
+msgstr ""
+
+#: ./config.py:22
+msgid "artistic class"
+msgstr ""
+
+#: ./configure.zcml:22
+msgid "artistic.content"
+msgstr ""
+
+#: ./config.py:24
+msgid "dance class"
+msgstr ""
+
+#: ./config.py:83
+msgid "experts"
+msgstr ""
+
+#. Default: "If selected, this item will not appear in the navigation tree"
+#: ./exclfromnav.py:28
+msgid "help_exclude_from_nav"
 msgstr ""
 
 #: ./config.py:35
-msgid "help_exp_28"
+msgid "help_exp_01"
 msgstr ""
 
 #: ./config.py:36
-msgid "help_exp_29"
+msgid "help_exp_02"
 msgstr ""
 
 #: ./config.py:37
-msgid "help_exp_30"
+msgid "help_exp_03"
 msgstr ""
 
 #: ./config.py:38
-msgid "help_exp_31"
+msgid "help_exp_04"
 msgstr ""
 
 #: ./config.py:39
-msgid "help_exp_32"
+msgid "help_exp_05"
 msgstr ""
 
 #: ./config.py:40
-msgid "help_exp_33"
+msgid "help_exp_06"
 msgstr ""
 
 #: ./config.py:41
-msgid "help_exp_34"
+msgid "help_exp_07"
 msgstr ""
 
 #: ./config.py:42
-msgid "help_exp_35"
+msgid "help_exp_08"
 msgstr ""
 
 #: ./config.py:43
-msgid "help_exp_36"
+msgid "help_exp_09"
 msgstr ""
 
 #: ./config.py:44
-msgid "help_exp_37"
+msgid "help_exp_10"
 msgstr ""
 
-#: ./config.py:50
-msgid "junior"
+#: ./config.py:45
+msgid "help_exp_11"
+msgstr ""
+
+#: ./config.py:46
+msgid "help_exp_12"
+msgstr ""
+
+#: ./config.py:47
+msgid "help_exp_13"
+msgstr ""
+
+#: ./config.py:48
+msgid "help_exp_14"
 msgstr ""
 
 #: ./config.py:49
-msgid "primary"
+msgid "help_exp_15"
+msgstr ""
+
+#: ./config.py:50
+msgid "help_exp_16"
 msgstr ""
 
 #: ./config.py:51
+msgid "help_exp_17"
+msgstr ""
+
+#: ./config.py:52
+msgid "help_exp_18"
+msgstr ""
+
+#: ./config.py:53
+msgid "help_exp_19"
+msgstr ""
+
+#: ./config.py:54
+msgid "help_exp_20"
+msgstr ""
+
+#: ./config.py:55
+msgid "help_exp_21"
+msgstr ""
+
+#: ./config.py:56
+msgid "help_exp_22"
+msgstr ""
+
+#: ./config.py:57
+msgid "help_exp_23"
+msgstr ""
+
+#: ./config.py:58
+msgid "help_exp_24"
+msgstr ""
+
+#: ./config.py:59
+msgid "help_exp_25"
+msgstr ""
+
+#: ./config.py:60
+msgid "help_exp_26"
+msgstr ""
+
+#: ./config.py:61
+msgid "help_exp_27"
+msgstr ""
+
+#: ./config.py:62
+msgid "help_exp_28"
+msgstr ""
+
+#: ./config.py:63
+msgid "help_exp_29"
+msgstr ""
+
+#: ./config.py:64
+msgid "help_exp_30"
+msgstr ""
+
+#: ./config.py:65
+msgid "help_exp_31"
+msgstr ""
+
+#: ./config.py:66
+msgid "help_exp_32"
+msgstr ""
+
+#: ./config.py:67
+msgid "help_exp_33"
+msgstr ""
+
+#: ./config.py:68
+msgid "help_exp_34"
+msgstr ""
+
+#: ./config.py:69
+msgid "help_exp_35"
+msgstr ""
+
+#: ./config.py:70
+msgid "help_exp_36"
+msgstr ""
+
+#: ./config.py:71
+msgid "help_exp_37"
+msgstr ""
+
+#: ./config.py:77
+msgid "junior"
+msgstr ""
+
+#. Default: "Exclude from navigation"
+#: ./exclfromnav.py:24
+msgid "label_exclude_from_nav"
+msgstr ""
+
+#: ./browser/template/folder_newsandevent.pt:30
+msgid "latest Event"
+msgstr ""
+
+#: ./browser/template/folder_newsandevent.pt:15
+msgid "latest News"
+msgstr ""
+
+#: ./browser/template/cover_view.pt:42
+msgid "more..."
+msgstr ""
+
+#: ./config.py:23
+msgid "music class"
+msgstr ""
+
+#: ./config.py:76
+msgid "primary"
+msgstr ""
+
+#: ./config.py:78
 msgid "senior"
+msgstr ""
+
+#: ./interfaces.py:57
+msgid "width:height must be 1:1"
 msgstr ""

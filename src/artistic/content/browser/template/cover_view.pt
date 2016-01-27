@@ -1,0 +1,96 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/main_template/macros/master"
+    i18n:domain="artistic.content">
+<body>
+
+
+<metal:content-core fill-slot="content-core">
+<metal:content-core define-macro="content-core"
+                    tal:define="toc context/table_of_contents|nothing;">
+
+
+<section class="cover_news_listing">
+
+                        <!-- Title section -->
+                        <h5 class="title_section" i18n:translate="">Latest News</h5> 
+                        <!-- Article list view -->
+                        <div class="article_list_view">
+
+    <tal:getItem define="catalog python:context.portal_catalog;
+                    brain python:catalog({'Type':'News Item', 'review_state':'published'},
+                                 sort_on='modified', sort_order='reverse')"
+                 repeat="item brain">
+
+
+                                <div class="widget_timeline_posts">
+                                    <div class="item cover">
+                                        <span class="date" tal:content="python:item.modified.strftime('%m / %d')">12 / 11</span>
+                                        <span class="time" tal:content="python:item.modified.strftime('%I:%M %p')">12:15 AM</span>
+                                        <div class="timeline_content">
+                                            <div class="pin_holder"><div class="inside"></div></div>
+                                            <h3><a tal:attributes="href item/getURL" tal:content="item/Title">103學年度高級中等學校藝術才能(資優)班訪視實施計畫</a></h3>
+                                            <span tal:condition="context/@@is_anonymous" tal:content="item/Description"/>
+                                        </div>
+                                    </div>
+                                </div>
+                         
+   </tal:getItem>
+</div>
+<a tal:attributes="href string:${context/absolute_url}/news#news_listing"
+   style="float:right" class="btn btn_purple"
+   i18n:translate="">more...</a>
+</section>
+
+<hr/>
+
+<section class="cover_event_listing">
+                                
+                        <!-- Title section -->
+                        <h5 class="title_section" i18n:translate="">Event Information</h5> 
+
+    <tal:getItem define="catalog python:context.portal_catalog;
+                    brain python:catalog({'Type':'Event', 'review_state':'published'},
+                                 sort_on='modified', sort_order='reverse')"
+                 repeat="item brain">
+
+                        <div class="article_list_view">
+
+                            <!-- Blog post -->
+                            <article class="item">
+                                <div class="item_header">
+                                    <a tal:attributes="href item/getURL">
+                                      <img tal:attributes="src string:${item/getURL}/@@images/image/preview" alt="Post">
+                                    </a>
+                                </div>
+                                <div class="item_content">
+                                    <h3><a tal:attributes="href item/getURL" tal:content="item/Title"></a></h3>
+                                    <div class="entry_meta">
+                                        <span><i class="fa fa-clock-o"></i>
+                                              <tal:date replace="python:item.modified.strftime('%Y / %m / %d')" />
+                                              <tal:published i18n:translate="">Published</tal:published>
+                                        </span>
+
+                                    </div>
+                                    <p tal:content="item/Description" />
+
+                                </div>
+                            </article>
+                        </div>
+    </tal:getItem>
+<a tal:attributes="href string:${context/absolute_url}/news#event_listing" 
+   style="float:right" class="btn btn_orange"
+   i18n:translate="">more...</a>
+</section>
+
+
+
+</metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
+

@@ -14,6 +14,9 @@
  <property name="allow_discussion">False</property>
  <property name="default_view">listing_view</property>
  <property name="view_methods">
+  <element value="art_folder_view"/>
+  <element value="art_folder_listing_view"/>
+  <element value="folder_newsandevent"/>
   <element value="listing_view"/>
   <element value="summary_view"/>
   <element value="tabular_view"/>

@@ -1,0 +1,55 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    i18n:domain="artistic.content">
+
+<?python
+from random import choice
+catalog = econtext['context'].portal_catalog
+brain = catalog({'Type':'SchoolInfo', 'review_state':'published'})
+total = range(len(brain)-4)
+num = choice(total)
+?>
+
+
+            <div class="wild_conatiner" tal:condition="context/@@is_anonymous">
+                <div class="container">
+                    <!-- Section title -->
+                    <h5 class="title_section" i18n:translate="">Art School Introduction</h5>
+                    <!-- Article grid view -->
+                    <div class="row article_standard_view">
+                        <div class="col col_3_of_12"
+                             tal:repeat="item python:brain[num:num+4]">
+                            <article class="item">
+                                <div class="item_header">
+                                    <a tal:attributes="href item/getURL">
+                                      <img tal:condition="python:item.getObject().image_1"
+                                           tal:attributes="src string:${item/getURL}/@@images/image_1/preview;
+                                                           alt item/Title">
+                                      <img tal:condition="python:not item.getObject().image_1"
+                                           tal:attributes="src python:'%s/@@images/image/mini' %
+                                                                       item.getObject().relatedImages[0].to_object.absolute_url();
+                                                           alt item/Title">
+                                    </a>
+                                </div>
+                                <div class="item_content">
+                                    <h3 class="schooltitle">
+                                      <a tal:attributes="href item/getURL" tal:content="item/Title">國立內壢高級中學</a>
+                                    </h3>
+                                    <div class="entry_meta">
+                                        <span tal:content="item/Description">提供學生在「快樂中學習，進步中成長」之學習環境。</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+<a class="btn btn_green"
+   tal:attributes="href string:${context/absolute_url}/artistic" style="float:right">學校列表...</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+</html>

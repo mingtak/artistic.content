@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
-<object name="HrDb" meta_type="Dexterity FTI" i18n:domain="artistic.content"
+<object name="SchoolInfo" meta_type="Dexterity FTI" i18n:domain="artistic.content"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
-  <property name="title" i18n:translate="">HrDb</property>
+  <property name="title" i18n:translate="">SchoolInfo</property>
   <property name="description"
     i18n:translate=""></property>
   <property name="icon_expr"></property>
-  <property name="factory">HrDb</property>
-  <property name="add_view_expr">string:${folder_url}/++add++HrDb</property>
+  <property name="factory">SchoolInfo</property>
+  <property name="add_view_expr">string:${folder_url}/++add++SchoolInfo</property>
   <property name="link_target"></property>
-  <property name="immediate_view">view</property>
+  <property name="immediate_view">schoolinfo_view</property>
   <property name="global_allow">True</property>
   <property name="filter_content_types">True</property>
   <property name="allowed_content_types">
   </property>
   <property name="allow_discussion">False</property>
-  <property name="default_view">view</property>
+  <property name="default_view">schoolinfo_view</property>
   <property name="view_methods">
-    <element value="view"/>
+    <element value="schoolinfo_view"/>
   </property>
   <property name="default_view_fallback">False</property>
   <property name="add_permission">cmf.AddPortalContent</property>
@@ -25,7 +25,7 @@
     <element value="plone.app.content.interfaces.INameFromTitle"/>
     <element value="collective.dexteritytextindexer.behavior.IDexterityTextIndexer" />
   </property>
-  <property name="schema">artistic.content.interfaces.IHrDb</property>
+  <property name="schema">artistic.content.interfaces.ISchoolInfo</property>
   <property name="model_source"></property>
   <property name="model_file"></property>
   <alias from="(Default)" to="(dynamic view)"/>

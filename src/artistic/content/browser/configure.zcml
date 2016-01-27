@@ -17,4 +17,103 @@
       directory="static"
       />
 
+  <browser:page
+      name="folder_newsandevent"
+      for="plone.app.contenttypes.interfaces.IFolder"
+      class=".views.FolderNewsAndEvent"
+      template="template/folder_newsandevent.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="art_folder_view"
+      for="plone.app.contenttypes.interfaces.IFolder"
+      class=".views.ArtFolderView"
+      template="template/art_folder_view.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="art_folder_listing_view"
+      for="plone.app.contenttypes.interfaces.IFolder"
+      class=".views.ArtFolderListingView"
+      template="template/art_folder_listing_view.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="cover_view"
+      for="artistic.content.interfaces.ICover"
+      class=".views.CoverView"
+      template="template/cover_view.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="schoolinfo_view"
+      for="artistic.content.interfaces.ISchoolInfo"
+      class=".views.SchoolInfoView"
+      template="template/schoolinfo_view.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="get_portal_id"
+      for="zope.interface.Interface"
+      class=".views.GetPortalId"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="get_portal_type"
+      for="zope.interface.Interface"
+      class=".views.GetPortalType"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="is_anonymous"
+      for="zope.interface.Interface"
+      class=".views.Is_Anonymous"
+      permission="zope2.View"
+      />
+
+
+
+<!--
+  <browser:page
+      name="import_talent"
+      for="zope.interface.Interface"
+      class=".importdata.Import_Talent"
+      permission="cmf.ManagePortal"
+      />
+
+  <browser:page
+      name="modifyschoolimage"
+      for="zope.interface.Interface"
+      class=".importdata.ModifySchoolImage"
+      permission="cmf.ManagePortal"
+      />
+
+  <browser:page
+      name="importimagefolder"
+      for="zope.interface.Interface"
+      class=".importdata.ImportImageFolder"
+      permission="cmf.ManagePortal"
+      />
+
+  <browser:page
+      name="importmembers"
+      for="zope.interface.Interface"
+      class=".importdata.ImportMembers"
+      permission="cmf.ManagePortal"
+      />
+
+  <browser:page
+      name="importschools"
+      for="zope.interface.Interface"
+      class=".importdata.ImportSchools"
+      permission="cmf.ManagePortal"
+      />
+-->
 </configure>

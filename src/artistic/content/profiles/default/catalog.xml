@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<object name="portal_catalog" meta_type="Plone Catalog Tool">
+
+  <index name="hrid" meta_type="FieldIndex">
+    <indexed_attr value="hrid" />
+  </index>
+  <column value="hrid"/>
+
+  <index name="url" meta_type="FieldIndex">
+    <indexed_attr value="url" />
+  </index>
+  <column value="url"/>
+
+  <index name="years" meta_type="FieldIndex">
+    <indexed_attr value="years" />
+  </index>
+  <column value="years"/>
+
+  <index name="whoCanEditor" meta_type="KeywordIndex">
+    <indexed_attr value="whoCanEditor" />
+  </index>
+  <column value="whoCanEditor"/>
+
+  <index name="city" meta_type="KeywordIndex">
+    <indexed_attr value="city" />
+  </index>
+  <column value="city"/>
+
+  <index name="artClassfication" meta_type="KeywordIndex">
+    <indexed_attr value="artClassfication" />
+  </index>
+  <column value="artClassfication"/>
+
+</object>
+
