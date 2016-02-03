@@ -2,6 +2,10 @@
 from plone.app.layout.viewlets import common as base
 
 
+class LoginPortlet(base.ViewletBase):
+    """ """
+
+
 class SchoolInfoListing(base.ViewletBase):
     """ """
 

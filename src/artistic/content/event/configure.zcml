@@ -1,0 +1,43 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="artistic.content">
+
+
+<subscriber
+    for="Products.PluggableAuthService.interfaces.events.IPrincipalCreatedEvent"
+    handler=".event.setPassword"
+    />
+
+<subscriber
+    for="Products.CMFPlone.interfaces.events.IConfigurationChangedEvent"
+    handler=".event.updatePassword"
+    />
+
+<subscriber
+    for="plone.app.contenttypes.interfaces.INewsItem
+         zope.lifecycleevent.interfaces.IObjectAddedEvent"
+    handler=".event.moveContentToTop"
+    />
+
+<subscriber
+    for="plone.app.contenttypes.interfaces.INewsItem
+         zope.lifecycleevent.IObjectModifiedEvent"
+    handler=".event.moveContentToTop"
+    />
+
+<subscriber
+    for="plone.app.contenttypes.interfaces.IEvent
+         zope.lifecycleevent.interfaces.IObjectAddedEvent"
+    handler=".event.moveContentToTop"
+    />
+
+<subscriber
+    for="plone.app.contenttypes.interfaces.IEvent
+         zope.lifecycleevent.IObjectModifiedEvent"
+    handler=".event.moveContentToTop"
+    />
+
+</configure>
+

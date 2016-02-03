@@ -21,6 +21,14 @@
       />
 
     <browser:viewlet
+      name="loginPortlet"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+      template="login_portlet.pt"
+      class=".viewlets.LoginPortlet"
+      permission="zope2.View"
+      />
+
+    <browser:viewlet
       name="coverslider"
       for="artistic.content.interfaces.ICover"
       manager="plone.app.layout.viewlets.interfaces.IAboveContent"
@@ -28,7 +36,6 @@
       class=".viewlets.CoverSlider"
       permission="zope2.View"
       />
-
 
     <browser:viewlet
       name="loginandlang"

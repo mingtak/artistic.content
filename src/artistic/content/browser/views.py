@@ -10,6 +10,14 @@ from plone import api
 #from zc.relation.interfaces import ICatalog
 
 
+class HrdbSearchView(BrowserView):
+    """ hrdb search view """
+
+
+class HrdbResultView(BrowserView):
+    """ hrdb result view """
+
+
 class GetPortalType(BrowserView):
 
     def __call__(self):

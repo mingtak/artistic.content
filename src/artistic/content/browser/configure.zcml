@@ -18,6 +18,22 @@
       />
 
   <browser:page
+      name="hrdb_search_view"
+      for="plone.app.contenttypes.interfaces.IFolder"
+      class=".views.HrdbSearchView"
+      template="template/hrdb_search_view.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="hrdb_result_view"
+      for="plone.app.contenttypes.interfaces.IFolder"
+      class=".views.HrdbResultView"
+      template="template/hrdb_result_view.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
       name="folder_newsandevent"
       for="plone.app.contenttypes.interfaces.IFolder"
       class=".views.FolderNewsAndEvent"
