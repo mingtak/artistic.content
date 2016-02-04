@@ -19,13 +19,13 @@ from artistic.content.config import HR_CLASSFICATION, SERVICE_LEVEL, CITY, EXPER
 ?>
 
 <div class="search_box">
-    <form id="search" method="GET" action="/">
+    <form id="search" method="GET" action="/hrdb/@@hrdb_result_view">
 
      <div class="talent_type clearfix">
       <label class="title_left">人才類別：</label>
       <div class="options" tal:define="items python:HR_CLASSFICATION.by_value.keys()">
          <label tal:repeat="item items">
-           <input tal:attributes="value item" type="checkbox" class="talent_type" name="talent_type[]">
+           <input tal:attributes="value item" type="checkbox" class="talent_type" name="classfication">
            <span tal:content="python:HR_CLASSFICATION.by_value[item].title">學者專家</span>
          </label>
       </div>
@@ -35,7 +35,7 @@ from artistic.content.config import HR_CLASSFICATION, SERVICE_LEVEL, CITY, EXPER
       <label class="title_left">教育階段：</label>
       <div class="options" tal:define="items python:SERVICE_LEVEL.by_value.keys()">
          <label tal:repeat="item items">
-           <input tal:attributes="value item" type="checkbox" class="talent_stage" name="talent_stage[]">
+           <input tal:attributes="value item" type="checkbox" class="talent_stage" name="serviceLevel">
            <span tal:content="python:SERVICE_LEVEL.by_value[item].title">國民小學</span>
          </label>
       </div>
@@ -45,7 +45,7 @@ from artistic.content.config import HR_CLASSFICATION, SERVICE_LEVEL, CITY, EXPER
       <label class="title_left">縣市別：</label>
       <div class="options" tal:define="items python:CITY.by_value.keys()">
         <label tal:repeat="item items">
-          <input tal:attributes="value item" type="checkbox" class="talent_county" name="talent_county[]">
+          <input tal:attributes="value item" type="checkbox" class="talent_county" name="city">
           <span tal:content="python:CITY.by_value[item].title">臺北市</span>
         </label>
       </div>
@@ -55,7 +55,7 @@ from artistic.content.config import HR_CLASSFICATION, SERVICE_LEVEL, CITY, EXPER
        <label class="title_left">專長：</label>
        <div class="options" tal:define="items python:EXPERTISE.by_value.keys()">
          <label tal:repeat="item items">
-           <input tal:attributes="value item" type="checkbox" class="talent_skill" name="talent_skill[]">
+           <input tal:attributes="value item" type="checkbox" class="talent_skill" name="expertise">
            <span tal:content="python:EXPERTISE.by_value[item].title">美術教育</span>
          </label>
 

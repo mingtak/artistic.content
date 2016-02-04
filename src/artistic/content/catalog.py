@@ -3,6 +3,23 @@ from plone.indexer.decorator import indexer
 from artistic.content import interfaces
 from zope.interface import Interface
 
+
+@indexer(Interface)
+def classfication_indexer(obj):
+    return obj.classfication
+
+@indexer(Interface)
+def serviceLevel_indexer(obj):
+    return obj.serviceLevel
+
+@indexer(Interface)
+def expertise_indexer(obj):
+    return obj.expertise
+
+#@indexer(Interface)
+#def city_indexer(obj):
+#    return obj.city
+
 @indexer(Interface)
 def hrid_indexer(obj):
     return obj.hrid

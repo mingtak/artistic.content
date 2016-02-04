@@ -82,7 +82,7 @@ SERVICE_LEVEL = SimpleVocabulary(
 HR_CLASSFICATION = SimpleVocabulary(
     [SimpleTerm(value=u'experts', title=_(u'experts')),
      SimpleTerm(value=u'artist', title=_(u'artist')),
-     SimpleTerm(value=u'artsOrg', title=_(u'artOrg'))]
+     SimpleTerm(value=u'artsOrg', title=_(u'artsOrg'))]
 )
 
 # 縣市別

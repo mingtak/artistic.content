@@ -61,3 +61,16 @@ class Is_Anonymous(BrowserView):
 
     def __call__(self):
         return api.user.is_anonymous()
+
+
+"""
+class TEST(BrowserView):
+
+    def __call__(self):
+        context = self.context
+        catalog = context.portal_catalog
+        brain = catalog(Type='HrDb')
+        for item in brain:
+            itemObj = item.getObject()
+            itemObj.reindexObject()
+"""

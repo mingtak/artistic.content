@@ -16,9 +16,9 @@
 from plone import api
 #import pdb; pdb.set_trace()
 request = econtext['request']
-catalog = econtext['context'].portal_catalog
-brain = catalog({'review_state':'published', 'Type':'HrDb',
-                 'classfication':request.form.get('classfication', '')})
+context = econtext['context']
+catalog = context.portal_catalog
+brain = catalog()
 ?>
 
 
@@ -38,22 +38,16 @@ brain = catalog({'review_state':'published', 'Type':'HrDb',
        
         
         
-    <tr tal:repeat="item brain">
-     <td tal:content="repeat/item/number">4</td>
-     <td tal:content="item/classfication" i18n:translate=""></td>
-     <td tal:content="item/Title">王美玲</td>
-     <td tal:content="python:item.getObject().serviceOrg">
+        <tr>
+     <td>4</td>
+     <td>藝術家</td>
+     <td>王美玲</td>
+     <td>
       岸內國小     </td>
-     <td tal:define="skills item/expertise">
-       <span tal:repeat="skill skills">
-         <span tal:content="skill" i18n:translate="" />
-         <span tal:condition="not:repeat/skill/end">, </span>
-       </span>
-     </td>
-     <td><a tal:condition="python:item.getObject().email"
-            tal:attributes="href python:item.getObject().email"><span class="glyphicon glyphicon-envelope"></span></a>
-     </td>
-     <td><a class="btn btn_small btn_green" tal:attributes="href item/getURL">詳細資訊</a></td>
+     <td>
+      美術教育     </td>
+     <td><a href="mailto:may87701@yahoo.com.tw"><span class="glyphicon glyphicon-envelope"></span></a></td>
+     <td><a class="btn btn_small btn_green" href="/">詳細資訊</a></td>
     </tr>
         
 

@@ -56,4 +56,14 @@
   <adapter name="url" factory=".catalog.url_indexer" />
   <adapter name="hrid" factory=".catalog.hrid_indexer" />
 
+  <adapter name="classfication" factory=".catalog.classfication_indexer"/>
+  <adapter name="serviceLevel" factory=".catalog.serviceLevel_indexer"/>
+  <adapter name="expertise" factory=".catalog.expertise_indexer"/>
+<!--
+  <adapter name="city" factory=".catalog.city_indexer"/>
+  <adapter name="" factory=".catalog._indexer"/>
+  <adapter name="" factory=".catalog._indexer"/>
+-->
+
+
 </configure>

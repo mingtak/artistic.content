@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-12-28 01:45+0000\n"
+"POT-Creation-Date: 2016-02-04 00:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,11 +34,15 @@ msgstr ""
 msgid "2020"
 msgstr ""
 
+#: ./viewlet/login_portlet.pt:33
+msgid "Account ID"
+msgstr ""
+
 #: ./config.py:90
 msgid "All Cities"
 msgstr ""
 
-#: ./interfaces.py:214
+#: ./interfaces.py:219
 msgid "Art Classfication"
 msgstr ""
 
@@ -46,15 +50,15 @@ msgstr ""
 msgid "Art School Introduction"
 msgstr ""
 
-#: ./interfaces.py:348
+#: ./interfaces.py:374
 msgid "Artistic Organization"
 msgstr ""
 
-#: ./interfaces.py:167
+#: ./interfaces.py:172
 msgid "Assign Editor"
 msgstr ""
 
-#: ./interfaces.py:146
+#: ./interfaces.py:149
 msgid "Basic"
 msgstr ""
 
@@ -62,11 +66,11 @@ msgstr ""
 msgid "Basic Device"
 msgstr ""
 
-#: ./interfaces.py:138
+#: ./interfaces.py:141
 msgid "Budget"
 msgstr ""
 
-#: ./interfaces.py:365
+#: ./interfaces.py:391
 msgid "Category information"
 msgstr ""
 
@@ -82,11 +86,11 @@ msgstr ""
 msgid "Chiayi County"
 msgstr ""
 
-#: ./interfaces.py:173
+#: ./interfaces.py:178
 msgid "City"
 msgstr ""
 
-#: ./interfaces.py:296
+#: ./interfaces.py:301
 msgid "Classes Introduction"
 msgstr ""
 
@@ -94,39 +98,39 @@ msgstr ""
 msgid "Cover"
 msgstr ""
 
-#: ./interfaces.py:82
+#: ./interfaces.py:85
 msgid "Cover Slider 1"
 msgstr ""
 
-#: ./interfaces.py:94
+#: ./interfaces.py:97
 msgid "Cover Slider 2"
 msgstr ""
 
-#: ./interfaces.py:106
+#: ./interfaces.py:109
 msgid "Cover Slider 3"
 msgstr ""
 
-#: ./interfaces.py:89
+#: ./interfaces.py:92
 msgid "Cover Slogan 1"
 msgstr ""
 
-#: ./interfaces.py:101
+#: ./interfaces.py:104
 msgid "Cover Slogan 2"
 msgstr ""
 
-#: ./interfaces.py:113
+#: ./interfaces.py:116
 msgid "Cover Slogan 3"
 msgstr ""
 
-#: ./interfaces.py:51
+#: ./interfaces.py:54
 msgid "Description"
 msgstr ""
 
-#: ./interfaces.py:132
+#: ./interfaces.py:135
 msgid "Device Classfication"
 msgstr ""
 
-#: ./interfaces.py:121
+#: ./interfaces.py:124
 msgid "Device Name"
 msgstr ""
 
@@ -134,15 +138,15 @@ msgstr ""
 msgid "DeviceBudget"
 msgstr ""
 
-#: ./interfaces.py:360
+#: ./interfaces.py:386
 msgid "Email Address"
 msgstr ""
 
-#: ./browser/template/cover_view.pt:52
+#: ./browser/template/cover_view.pt:53
 msgid "Event Information"
 msgstr ""
 
-#: ./interfaces.py:387
+#: ./interfaces.py:413
 msgid "Experitse"
 msgstr ""
 
@@ -150,8 +154,12 @@ msgstr ""
 msgid "Extension Device"
 msgstr ""
 
-#: ./interfaces.py:371
+#: ./interfaces.py:397
 msgid "HR Classfication"
+msgstr ""
+
+#: ./interfaces.py:363
+msgid "HR id"
 msgstr ""
 
 #: ./profiles/default/types/HrDb.xml
@@ -170,15 +178,15 @@ msgstr ""
 msgid "Hualien County"
 msgstr ""
 
-#: ./interfaces.py:83
+#: ./interfaces.py:86
 msgid "Image Size must be 720X400(W:H)"
 msgstr ""
 
-#: ./configure.zcml:22
+#: ./configure.zcml:23
 msgid "Installs the artistic.content add-on."
 msgstr ""
 
-#: ./interfaces.py:305
+#: ./interfaces.py:312
 msgid "Introduction"
 msgstr ""
 
@@ -202,35 +210,39 @@ msgstr ""
 msgid "Lienchiang County"
 msgstr ""
 
-#: ./interfaces.py:262
-msgid "Manager 1's Extension"
-msgstr ""
-
-#: ./interfaces.py:257
-msgid "Manager 1's Name"
-msgstr ""
-
-#: ./interfaces.py:272
-msgid "Manager 2's Extension"
+#: ./viewlet/login_portlet.pt:15
+msgid "Login"
 msgstr ""
 
 #: ./interfaces.py:267
+msgid "Manager 1's Extension"
+msgstr ""
+
+#: ./interfaces.py:262
+msgid "Manager 1's Name"
+msgstr ""
+
+#: ./interfaces.py:277
+msgid "Manager 2's Extension"
+msgstr ""
+
+#: ./interfaces.py:272
 msgid "Manager 2's Name"
 msgstr ""
 
-#: ./interfaces.py:281
+#: ./interfaces.py:286
 msgid "Manager 3's Extension"
 msgstr ""
 
-#: ./interfaces.py:276
+#: ./interfaces.py:281
 msgid "Manager 3's Name"
 msgstr ""
 
-#: ./interfaces.py:291
+#: ./interfaces.py:296
 msgid "Manager 4's Extension"
 msgstr ""
 
-#: ./interfaces.py:286
+#: ./interfaces.py:291
 msgid "Manager 4's Name"
 msgstr ""
 
@@ -238,15 +250,15 @@ msgstr ""
 msgid "Miaoli County"
 msgstr ""
 
-#: ./interfaces.py:64
+#: ./interfaces.py:67
 msgid "Must be include http:// or https://"
 msgstr ""
 
-#: ./interfaces.py:242
+#: ./interfaces.py:247
 msgid "Must include http:// or https://"
 msgstr ""
 
-#: ./interfaces.py:343
+#: ./interfaces.py:369
 msgid "Name"
 msgstr ""
 
@@ -258,8 +270,12 @@ msgstr ""
 msgid "New Taipei City"
 msgstr ""
 
-#: ./interfaces.py:312
+#: ./interfaces.py:319
 msgid "Old Image Folder id"
+msgstr ""
+
+#: ./viewlet/login_portlet.pt:38
+msgid "Password"
 msgstr ""
 
 #: ./config.py:110
@@ -270,15 +286,23 @@ msgstr ""
 msgid "Pingtung County"
 msgstr ""
 
-#: ./interfaces.py:317
+#: ./viewlet/login_portlet.pt:34
+msgid "Please input ID"
+msgstr ""
+
+#: ./viewlet/login_portlet.pt:39
+msgid "Please input password"
+msgstr ""
+
+#: ./interfaces.py:335
 msgid "Please upload an image"
 msgstr ""
 
-#: ./interfaces.py:252
+#: ./interfaces.py:257
 msgid "Principal Extension"
 msgstr ""
 
-#: ./interfaces.py:247
+#: ./interfaces.py:252
 msgid "Principal Name"
 msgstr ""
 
@@ -286,7 +310,7 @@ msgstr ""
 msgid "Private School"
 msgstr ""
 
-#: ./interfaces.py:46
+#: ./interfaces.py:48
 msgid "Project Title"
 msgstr ""
 
@@ -294,67 +318,75 @@ msgstr ""
 msgid "Public School"
 msgstr ""
 
-#: ./interfaces.py:187
+#: ./interfaces.py:192
 msgid "Public or Private School"
 msgstr ""
 
-#: ./browser/template/cover_view.pt:73
+#: ./browser/template/cover_view.pt:74
 msgid "Published"
 msgstr ""
 
-#: ./interfaces.py:318
+#: ./interfaces.py:336
 msgid "Recommend that all use the same size photo"
 msgstr ""
 
-#: ./interfaces.py:230
+#: ./interfaces.py:328
+msgid "Related Image"
+msgstr ""
+
+#: ./interfaces.py:326
+msgid "Related Images"
+msgstr ""
+
+#: ./interfaces.py:235
 msgid "School Address"
 msgstr ""
 
-#: ./browser/template/schoolinfo_view.pt:31
+#: ./browser/template/schoolinfo_view.pt:42
 msgid "School Address:"
 msgstr ""
 
-#: ./interfaces.py:236
+#: ./interfaces.py:241
 msgid "School District"
 msgstr ""
 
-#: ./interfaces.py:225
+#: ./interfaces.py:230
 msgid "School Fax Number"
 msgstr ""
 
-#: ./interfaces.py:193
+#: ./interfaces.py:198
 msgid "School Information"
 msgstr ""
 
-#: ./browser/template/schoolinfo_view.pt:47
+#: ./browser/template/schoolinfo_view.pt:58
 msgid "School Introduction:"
 msgstr ""
 
-#: ./interfaces.py:180
+#: ./interfaces.py:185
 msgid "School Level"
 msgstr ""
 
-#: ./interfaces.py:156
+#: ./interfaces.py:160
 msgid "School Name"
 msgstr ""
 
-#: ./interfaces.py:220
+#: ./interfaces.py:225
 msgid "School Phone Number"
 msgstr ""
 
-#: ./browser/template/schoolinfo_view.pt:36
+#: ./browser/template/schoolinfo_view.pt:47
 msgid "School TEL:"
 msgstr ""
 
-#: ./interfaces.py:241
+#: ./interfaces.py:246
 msgid "School URL"
 msgstr ""
 
-#: ./browser/template/schoolinfo_view.pt:41
+#: ./browser/template/schoolinfo_view.pt:52
 msgid "School Website:"
 msgstr ""
 
-#: ./interfaces.py:161
+#: ./interfaces.py:166
 msgid "School short description"
 msgstr ""
 
@@ -362,15 +394,15 @@ msgstr ""
 msgid "SchoolInfo"
 msgstr ""
 
-#: ./interfaces.py:394
+#: ./interfaces.py:420
 msgid "Service Cities"
 msgstr ""
 
-#: ./interfaces.py:378
+#: ./interfaces.py:404
 msgid "Service Level"
 msgstr ""
 
-#: ./interfaces.py:355
+#: ./interfaces.py:381
 msgid "Service Organization"
 msgstr ""
 
@@ -378,11 +410,11 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: ./interfaces.py:56
+#: ./interfaces.py:59
 msgid "Sub Project Image"
 msgstr ""
 
-#: ./interfaces.py:63
+#: ./interfaces.py:66
 msgid "Sub Project Website URL."
 msgstr ""
 
@@ -414,23 +446,23 @@ msgstr ""
 msgid "Taoyuan City"
 msgstr ""
 
-#: ./interfaces.py:72
+#: ./interfaces.py:75
 msgid "Title"
 msgstr ""
 
-#: ./configure.zcml:37
+#: ./configure.zcml:38
 msgid "Uninstalls the artistic.content add-on."
 msgstr ""
 
-#: ./interfaces.py:40
+#: ./interfaces.py:41
 msgid "Wrong! Image Size must be 720X400(W:H)"
 msgstr ""
 
-#: ./interfaces.py:31
-msgid "Wrong! width:height must be 1:1."
+#: ./interfaces.py:32
+msgid "Wrong! width:height must be 2:1."
 msgstr ""
 
-#: ./interfaces.py:126
+#: ./interfaces.py:129
 msgid "Years"
 msgstr ""
 
@@ -442,10 +474,6 @@ msgstr ""
 msgid "Yunlin County"
 msgstr ""
 
-#: ./config.py:85
-msgid "artOrg"
-msgstr ""
-
 #: ./config.py:84
 msgid "artist"
 msgstr ""
@@ -454,8 +482,12 @@ msgstr ""
 msgid "artistic class"
 msgstr ""
 
-#: ./configure.zcml:22
+#: ./configure.zcml:23
 msgid "artistic.content"
+msgstr ""
+
+#: ./config.py:85
+msgid "artsOrg"
 msgstr ""
 
 #: ./config.py:24
@@ -636,7 +668,7 @@ msgstr ""
 msgid "latest News"
 msgstr ""
 
-#: ./browser/template/cover_view.pt:42
+#: ./browser/template/cover_view.pt:43
 msgid "more..."
 msgstr ""
 
@@ -652,6 +684,6 @@ msgstr ""
 msgid "senior"
 msgstr ""
 
-#: ./interfaces.py:57
+#: ./interfaces.py:60
 msgid "width:height must be 1:1"
 msgstr ""

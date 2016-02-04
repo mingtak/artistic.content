@@ -1,6 +1,26 @@
 <?xml version="1.0"?>
 <object name="portal_catalog" meta_type="Plone Catalog Tool">
 
+  <index name="classfication" meta_type="KeywordIndex">
+    <indexed_attr value="classfication" />
+  </index>
+  <column value="classfication"/>
+
+  <index name="serviceLevel" meta_type="KeywordIndex">
+    <indexed_attr value="serviceLevel" />
+  </index>
+  <column value="serviceLevel"/>
+
+  <index name="expertise" meta_type="KeywordIndex">
+    <indexed_attr value="expertise" />
+  </index>
+  <column value="expertise"/>
+
+  <index name="city" meta_type="KeywordIndex">
+    <indexed_attr value="city" />
+  </index>
+  <column value="city"/>
+
   <index name="hrid" meta_type="FieldIndex">
     <indexed_attr value="hrid" />
   </index>
@@ -21,10 +41,12 @@
   </index>
   <column value="whoCanEditor"/>
 
+<!--
   <index name="city" meta_type="KeywordIndex">
     <indexed_attr value="city" />
   </index>
   <column value="city"/>
+-->
 
   <index name="artClassfication" meta_type="KeywordIndex">
     <indexed_attr value="artClassfication" />

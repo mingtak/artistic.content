@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-12-28 01:45+0000\n"
+"POT-Creation-Date: 2016-02-04 00:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: ./config.py:7
 msgid "2016"
-msgstr ""
+msgstr "2016"
 
 #: ./config.py:8
 msgid "2017"
@@ -34,11 +34,15 @@ msgstr ""
 msgid "2020"
 msgstr ""
 
+#: ./viewlet/login_portlet.pt:33
+msgid "Account ID"
+msgstr "使用者帳號"
+
 #: ./config.py:90
 msgid "All Cities"
 msgstr "全部縣市"
 
-#: ./interfaces.py:214
+#: ./interfaces.py:219
 msgid "Art Classfication"
 msgstr "藝才類別"
 
@@ -46,15 +50,15 @@ msgstr "藝才類別"
 msgid "Art School Introduction"
 msgstr "藝術才能班學校簡介"
 
-#: ./interfaces.py:348
+#: ./interfaces.py:374
 msgid "Artistic Organization"
 msgstr "所屬藝術團體"
 
-#: ./interfaces.py:167
+#: ./interfaces.py:172
 msgid "Assign Editor"
 msgstr "指定編輯者"
 
-#: ./interfaces.py:146
+#: ./interfaces.py:149
 msgid "Basic"
 msgstr "基本資料"
 
@@ -62,11 +66,11 @@ msgstr "基本資料"
 msgid "Basic Device"
 msgstr "基本設備"
 
-#: ./interfaces.py:138
+#: ./interfaces.py:141
 msgid "Budget"
 msgstr "金額"
 
-#: ./interfaces.py:365
+#: ./interfaces.py:391
 msgid "Category information"
 msgstr "專長分類"
 
@@ -82,11 +86,11 @@ msgstr "嘉義市"
 msgid "Chiayi County"
 msgstr "嘉義縣"
 
-#: ./interfaces.py:173
+#: ./interfaces.py:178
 msgid "City"
 msgstr "縣市"
 
-#: ./interfaces.py:296
+#: ./interfaces.py:301
 msgid "Classes Introduction"
 msgstr "藝才班級簡介"
 
@@ -94,39 +98,39 @@ msgstr "藝才班級簡介"
 msgid "Cover"
 msgstr "首頁封面"
 
-#: ./interfaces.py:82
+#: ./interfaces.py:85
 msgid "Cover Slider 1"
 msgstr "封面幻燈片圖檔 1"
 
-#: ./interfaces.py:94
+#: ./interfaces.py:97
 msgid "Cover Slider 2"
 msgstr "封面幻燈片圖檔 2"
 
-#: ./interfaces.py:106
+#: ./interfaces.py:109
 msgid "Cover Slider 3"
 msgstr "封面幻燈片圖檔 3"
 
-#: ./interfaces.py:89
+#: ./interfaces.py:92
 msgid "Cover Slogan 1"
 msgstr "封面幻燈片 1 標語"
 
-#: ./interfaces.py:101
+#: ./interfaces.py:104
 msgid "Cover Slogan 2"
 msgstr "封面幻燈片 2 標語"
 
-#: ./interfaces.py:113
+#: ./interfaces.py:116
 msgid "Cover Slogan 3"
 msgstr "封面幻燈片 3 標語"
 
-#: ./interfaces.py:51
+#: ./interfaces.py:54
 msgid "Description"
 msgstr "簡要描述"
 
-#: ./interfaces.py:132
+#: ./interfaces.py:135
 msgid "Device Classfication"
 msgstr "設備分類"
 
-#: ./interfaces.py:121
+#: ./interfaces.py:124
 msgid "Device Name"
 msgstr "設備名稱"
 
@@ -134,15 +138,15 @@ msgstr "設備名稱"
 msgid "DeviceBudget"
 msgstr "設備金額"
 
-#: ./interfaces.py:360
+#: ./interfaces.py:386
 msgid "Email Address"
 msgstr "email信箱"
 
-#: ./browser/template/cover_view.pt:52
+#: ./browser/template/cover_view.pt:53
 msgid "Event Information"
 msgstr "活動資訊"
 
-#: ./interfaces.py:387
+#: ./interfaces.py:413
 msgid "Experitse"
 msgstr "專長領域"
 
@@ -150,9 +154,13 @@ msgstr "專長領域"
 msgid "Extension Device"
 msgstr "擴充設備"
 
-#: ./interfaces.py:371
+#: ./interfaces.py:397
 msgid "HR Classfication"
 msgstr "人才分類"
+
+#: ./interfaces.py:363
+msgid "HR id"
+msgstr "人才庫編號"
 
 #: ./profiles/default/types/HrDb.xml
 msgid "HrDb"
@@ -170,15 +178,15 @@ msgstr "新竹縣"
 msgid "Hualien County"
 msgstr "花蓮縣"
 
-#: ./interfaces.py:83
+#: ./interfaces.py:86
 msgid "Image Size must be 720X400(W:H)"
 msgstr "圖檔尺寸寬:高必須為 720:400 px"
 
-#: ./configure.zcml:22
+#: ./configure.zcml:23
 msgid "Installs the artistic.content add-on."
 msgstr "安裝 artistic.content 擴充模組"
 
-#: ./interfaces.py:305
+#: ./interfaces.py:312
 msgid "Introduction"
 msgstr "簡介"
 
@@ -202,35 +210,39 @@ msgstr "最新消息"
 msgid "Lienchiang County"
 msgstr "連江縣"
 
-#: ./interfaces.py:262
+#: ./viewlet/login_portlet.pt:15
+msgid "Login"
+msgstr "登入"
+
+#: ./interfaces.py:267
 msgid "Manager 1's Extension"
 msgstr "教務主任分機"
 
-#: ./interfaces.py:257
+#: ./interfaces.py:262
 msgid "Manager 1's Name"
 msgstr "教務主任姓名"
 
-#: ./interfaces.py:272
+#: ./interfaces.py:277
 msgid "Manager 2's Extension"
 msgstr "輔導主任分機"
 
-#: ./interfaces.py:267
+#: ./interfaces.py:272
 msgid "Manager 2's Name"
 msgstr "輔導主任姓名"
 
-#: ./interfaces.py:281
+#: ./interfaces.py:286
 msgid "Manager 3's Extension"
 msgstr "學務主任分機"
 
-#: ./interfaces.py:276
+#: ./interfaces.py:281
 msgid "Manager 3's Name"
 msgstr "學務主任姓名"
 
-#: ./interfaces.py:291
+#: ./interfaces.py:296
 msgid "Manager 4's Extension"
 msgstr "藝才班承辦人分機"
 
-#: ./interfaces.py:286
+#: ./interfaces.py:291
 msgid "Manager 4's Name"
 msgstr "藝才班承辦人姓名"
 
@@ -238,15 +250,15 @@ msgstr "藝才班承辦人姓名"
 msgid "Miaoli County"
 msgstr "苗栗縣"
 
-#: ./interfaces.py:64
+#: ./interfaces.py:67
 msgid "Must be include http:// or https://"
 msgstr "必須包括 http:// 或 https://"
 
-#: ./interfaces.py:242
+#: ./interfaces.py:247
 msgid "Must include http:// or https://"
 msgstr "開頭必須包含http:// 或 https://"
 
-#: ./interfaces.py:343
+#: ./interfaces.py:369
 msgid "Name"
 msgstr "姓名"
 
@@ -258,9 +270,13 @@ msgstr "南投縣"
 msgid "New Taipei City"
 msgstr "新北市"
 
-#: ./interfaces.py:312
+#: ./interfaces.py:319
 msgid "Old Image Folder id"
 msgstr ""
+
+#: ./viewlet/login_portlet.pt:38
+msgid "Password"
+msgstr "密碼"
 
 #: ./config.py:110
 msgid "Penghu County"
@@ -270,15 +286,23 @@ msgstr "澎湖縣"
 msgid "Pingtung County"
 msgstr "屏東縣"
 
-#: ./interfaces.py:317
+#: ./viewlet/login_portlet.pt:34
+msgid "Please input ID"
+msgstr "請輸入帳號"
+
+#: ./viewlet/login_portlet.pt:39
+msgid "Please input password"
+msgstr "請輸入密碼"
+
+#: ./interfaces.py:335
 msgid "Please upload an image"
 msgstr "請上傳圖檔"
 
-#: ./interfaces.py:252
+#: ./interfaces.py:257
 msgid "Principal Extension"
 msgstr "校長分機"
 
-#: ./interfaces.py:247
+#: ./interfaces.py:252
 msgid "Principal Name"
 msgstr "校長姓名"
 
@@ -286,7 +310,7 @@ msgstr "校長姓名"
 msgid "Private School"
 msgstr "私立學校"
 
-#: ./interfaces.py:46
+#: ./interfaces.py:48
 msgid "Project Title"
 msgstr "計畫名稱"
 
@@ -294,67 +318,75 @@ msgstr "計畫名稱"
 msgid "Public School"
 msgstr "公立學校"
 
-#: ./interfaces.py:187
+#: ./interfaces.py:192
 msgid "Public or Private School"
 msgstr "公立或私立學校"
 
-#: ./browser/template/cover_view.pt:73
+#: ./browser/template/cover_view.pt:74
 msgid "Published"
 msgstr "發佈"
 
-#: ./interfaces.py:318
+#: ./interfaces.py:336
 msgid "Recommend that all use the same size photo"
 msgstr "建議所有照片採用相同尺寸."
 
-#: ./interfaces.py:230
+#: ./interfaces.py:328
+msgid "Related Image"
+msgstr "相關圖檔"
+
+#: ./interfaces.py:326
+msgid "Related Images"
+msgstr "相關圖檔"
+
+#: ./interfaces.py:235
 msgid "School Address"
 msgstr "學校地址"
 
-#: ./browser/template/schoolinfo_view.pt:31
+#: ./browser/template/schoolinfo_view.pt:42
 msgid "School Address:"
 msgstr "地址："
 
-#: ./interfaces.py:236
+#: ./interfaces.py:241
 msgid "School District"
 msgstr "學校學區"
 
-#: ./interfaces.py:225
+#: ./interfaces.py:230
 msgid "School Fax Number"
 msgstr "學校傳真號碼"
 
-#: ./interfaces.py:193
+#: ./interfaces.py:198
 msgid "School Information"
 msgstr "學校資訊"
 
-#: ./browser/template/schoolinfo_view.pt:47
+#: ./browser/template/schoolinfo_view.pt:58
 msgid "School Introduction:"
 msgstr "學校介紹："
 
-#: ./interfaces.py:180
+#: ./interfaces.py:185
 msgid "School Level"
 msgstr "學校級別"
 
-#: ./interfaces.py:156
+#: ./interfaces.py:160
 msgid "School Name"
 msgstr "學校名稱"
 
-#: ./interfaces.py:220
+#: ./interfaces.py:225
 msgid "School Phone Number"
 msgstr "學校電話號碼"
 
-#: ./browser/template/schoolinfo_view.pt:36
+#: ./browser/template/schoolinfo_view.pt:47
 msgid "School TEL:"
 msgstr "電話："
 
-#: ./interfaces.py:241
+#: ./interfaces.py:246
 msgid "School URL"
 msgstr "學校網址"
 
-#: ./browser/template/schoolinfo_view.pt:41
+#: ./browser/template/schoolinfo_view.pt:52
 msgid "School Website:"
 msgstr "網址："
 
-#: ./interfaces.py:161
+#: ./interfaces.py:166
 msgid "School short description"
 msgstr "學校簡要描述"
 
@@ -362,15 +394,15 @@ msgstr "學校簡要描述"
 msgid "SchoolInfo"
 msgstr "學校資訊"
 
-#: ./interfaces.py:394
+#: ./interfaces.py:420
 msgid "Service Cities"
 msgstr "服務縣市"
 
-#: ./interfaces.py:378
+#: ./interfaces.py:404
 msgid "Service Level"
 msgstr "服務教育階段"
 
-#: ./interfaces.py:355
+#: ./interfaces.py:381
 msgid "Service Organization"
 msgstr "所屬服務單位"
 
@@ -378,11 +410,11 @@ msgstr "所屬服務單位"
 msgid "Settings"
 msgstr "設定"
 
-#: ./interfaces.py:56
+#: ./interfaces.py:59
 msgid "Sub Project Image"
 msgstr "計畫圖檔"
 
-#: ./interfaces.py:63
+#: ./interfaces.py:66
 msgid "Sub Project Website URL."
 msgstr "計畫網站網址"
 
@@ -414,23 +446,23 @@ msgstr "台東縣"
 msgid "Taoyuan City"
 msgstr "桃園市"
 
-#: ./interfaces.py:72
+#: ./interfaces.py:75
 msgid "Title"
 msgstr "標題"
 
-#: ./configure.zcml:37
+#: ./configure.zcml:38
 msgid "Uninstalls the artistic.content add-on."
 msgstr "御載 artistic.content 擴充模組"
 
-#: ./interfaces.py:40
+#: ./interfaces.py:41
 msgid "Wrong! Image Size must be 720X400(W:H)"
 msgstr "錯誤！圖檔尺寸寬:高必須為 720:400 px"
 
-#: ./interfaces.py:31
-msgid "Wrong! width:height must be 1:1."
-msgstr "錯誤！圖檔寬:高比例必須為 1:1"
+#: ./interfaces.py:32
+msgid "Wrong! width:height must be 2:1."
+msgstr "警告！寬:高必須為 2:1 。"
 
-#: ./interfaces.py:126
+#: ./interfaces.py:129
 msgid "Years"
 msgstr "年度"
 
@@ -442,10 +474,6 @@ msgstr "宜蘭縣"
 msgid "Yunlin County"
 msgstr "雲林縣"
 
-#: ./config.py:85
-msgid "artOrg"
-msgstr "藝術團體"
-
 #: ./config.py:84
 msgid "artist"
 msgstr "藝術家"
@@ -454,9 +482,13 @@ msgstr "藝術家"
 msgid "artistic class"
 msgstr "美術班"
 
-#: ./configure.zcml:22
+#: ./configure.zcml:23
 msgid "artistic.content"
 msgstr ""
+
+#: ./config.py:85
+msgid "artsOrg"
+msgstr "藝術團體"
 
 #: ./config.py:24
 msgid "dance class"
@@ -636,7 +668,7 @@ msgstr "活動資訊"
 msgid "latest News"
 msgstr "最新消息"
 
-#: ./browser/template/cover_view.pt:42
+#: ./browser/template/cover_view.pt:43
 msgid "more..."
 msgstr "查看更多..."
 
@@ -652,6 +684,6 @@ msgstr "國小"
 msgid "senior"
 msgstr "高中"
 
-#: ./interfaces.py:57
+#: ./interfaces.py:60
 msgid "width:height must be 1:1"
 msgstr "寬:高比必須為 1:1"
