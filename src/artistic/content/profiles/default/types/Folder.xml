@@ -19,6 +19,7 @@
   <element value="art_folder_view"/>
   <element value="art_folder_listing_view"/>
   <element value="folder_newsandevent"/>
+  <element value="subproject_folder_view"/>
   <element value="listing_view"/>
   <element value="summary_view"/>
   <element value="tabular_view"/>

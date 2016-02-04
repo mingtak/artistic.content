@@ -179,8 +179,8 @@ msgid "Hualien County"
 msgstr "花蓮縣"
 
 #: ./interfaces.py:86
-msgid "Image Size must be 720X400(W:H)"
-msgstr "圖檔尺寸寬:高必須為 720:400 px"
+msgid "Image Size must be 720X300(W:H)"
+msgstr "圖檔尺寸寬:高必須為 720:300 px"
 
 #: ./configure.zcml:23
 msgid "Installs the artistic.content add-on."
@@ -455,8 +455,8 @@ msgid "Uninstalls the artistic.content add-on."
 msgstr "御載 artistic.content 擴充模組"
 
 #: ./interfaces.py:41
-msgid "Wrong! Image Size must be 720X400(W:H)"
-msgstr "錯誤！圖檔尺寸寬:高必須為 720:400 px"
+msgid "Wrong! Image Size must be 720X300(W:H)"
+msgstr "錯誤！圖檔尺寸寬:高必須為 720:300 px"
 
 #: ./interfaces.py:32
 msgid "Wrong! width:height must be 2:1."

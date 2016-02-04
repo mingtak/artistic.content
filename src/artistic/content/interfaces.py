@@ -36,9 +36,9 @@ def checkCoverImage(image):
     """Check Image height:width is 1:1.8
     """
     imageSize = image.getImageSize()
-    if imageSize[0] == 720 and imageSize[1] == 400:
+    if imageSize[0] == 720 and imageSize[1] == 300:
         return True
-    raise Invalid(_(u"Wrong! Image Size must be 720X400(W:H)"))
+    raise Invalid(_(u"Wrong! Image Size must be 720X300(W:H)"))
 
 
 class ISubProject(Interface):

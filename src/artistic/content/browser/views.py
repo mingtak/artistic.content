@@ -10,6 +10,10 @@ from plone import api
 #from zc.relation.interfaces import ICatalog
 
 
+class SubprojectFolderView(BrowserView):
+    """ subproject folder view """
+
+
 class HrdbSearchView(BrowserView):
     """ hrdb search view """
 
