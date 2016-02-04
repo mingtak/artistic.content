@@ -17,8 +17,18 @@ from plone import api
 #import pdb; pdb.set_trace()
 request = econtext['request']
 catalog = econtext['context'].portal_catalog
-brain = catalog({'review_state':'published', 'Type':'HrDb',
-                 'classfication':request.form.get('classfication', '')})
+
+conditionDict={'review_state':'published', 'Type':'HrDb'}
+if request.form.has_key('classfication'):
+    conditionDict['classfication'] = request.form.get('classfication')
+if request.form.has_key('serviceLevel'):
+    conditionDict['serviceLevel'] = request.form.get('serviceLevel')
+if request.form.has_key('city'):
+    conditionDict['city'] = request.form.get('city')
+if request.form.has_key('expertise'):
+    conditionDict['expertise'] = request.form.get('expertise')
+
+brain = catalog(conditionDict)
 ?>
 
 
@@ -38,7 +48,7 @@ brain = catalog({'review_state':'published', 'Type':'HrDb',
        
         
         
-    <tr tal:repeat="item brain">
+    <tr tal:repeat="item brain" tal:attributes="class python:'odd' if repeat['item'].even else 'even'">
      <td tal:content="repeat/item/number">4</td>
      <td tal:content="item/classfication" i18n:translate=""></td>
      <td tal:content="item/Title">王美玲</td>
@@ -47,7 +57,7 @@ brain = catalog({'review_state':'published', 'Type':'HrDb',
      <td tal:define="skills item/expertise">
        <span tal:repeat="skill skills">
          <span tal:content="skill" i18n:translate="" />
-         <span tal:condition="not:repeat/skill/end">, </span>
+         <span tal:condition="not:repeat/skill/end">,<br/> </span>
        </span>
      </td>
      <td><a tal:condition="python:item.getObject().email"

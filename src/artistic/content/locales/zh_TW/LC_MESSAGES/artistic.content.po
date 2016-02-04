@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-02-04 00:27+0000\n"
+"POT-Creation-Date: 2016-02-04 01:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -494,6 +494,154 @@ msgstr "藝術團體"
 msgid "dance class"
 msgstr "舞蹈班"
 
+#: ./config.py:35
+msgid "exp_1"
+msgstr "美術教育"
+
+#: ./config.py:44
+msgid "exp_10"
+msgstr "藝術課程規劃"
+
+#: ./config.py:45
+msgid "exp_11"
+msgstr "藝術類教學與輔導"
+
+#: ./config.py:46
+msgid "exp_12"
+msgstr "創意與設計"
+
+#: ./config.py:47
+msgid "exp_13"
+msgstr "電腦科技應用"
+
+#: ./config.py:48
+msgid "exp_14"
+msgstr "跨領域"
+
+#: ./config.py:49
+msgid "exp_15"
+msgstr "童玩設計"
+
+#: ./config.py:50
+msgid "exp_16"
+msgstr "書法"
+
+#: ./config.py:51
+msgid "exp_17"
+msgstr "直ㄊ團隊教學，奧福音樂教學"
+
+#: ./config.py:52
+msgid "exp_18"
+msgstr "草編藝術"
+
+#: ./config.py:53
+msgid "exp_19"
+msgstr "陶藝創作"
+
+#: ./config.py:36
+msgid "exp_2"
+msgstr "美術創作"
+
+#: ./config.py:54
+msgid "exp_20"
+msgstr "視覺藝術創作"
+
+#: ./config.py:55
+msgid "exp_21"
+msgstr "陶藝"
+
+#: ./config.py:56
+msgid "exp_22"
+msgstr "書法教育"
+
+#: ./config.py:57
+msgid "exp_23"
+msgstr "民俗體育藝術"
+
+#: ./config.py:58
+msgid "exp_24"
+msgstr "書法教學"
+
+#: ./config.py:59
+msgid "exp_25"
+msgstr "書藝教學"
+
+#: ./config.py:60
+msgid "exp_26"
+msgstr "風箏教學 室內風箏表演"
+
+#: ./config.py:61
+msgid "exp_27"
+msgstr "戲劇"
+
+#: ./config.py:62
+msgid "exp_28"
+msgstr "布袋戲"
+
+#: ./config.py:63
+msgid "exp_29"
+msgstr "表演藝術"
+
+#: ./config.py:37
+msgid "exp_3"
+msgstr "音樂教育"
+
+#: ./config.py:64
+msgid "exp_30"
+msgstr "社會科學教育研究所 碩士"
+
+#: ./config.py:65
+msgid "exp_31"
+msgstr "舞獅"
+
+#: ./config.py:66
+msgid "exp_32"
+msgstr "健康體育"
+
+#: ./config.py:67
+msgid "exp_33"
+msgstr "民俗舞師藝術"
+
+#: ./config.py:68
+msgid "exp_34"
+msgstr "傳統藝術類"
+
+#: ./config.py:69
+msgid "exp_35"
+msgstr "布袋戲團體"
+
+#: ./config.py:70
+msgid "exp_36"
+msgstr "設計教育、設計實務、創意思考、創意表現"
+
+#: ./config.py:71
+msgid "exp_37"
+msgstr "音樂賞析"
+
+#: ./config.py:38
+msgid "exp_4"
+msgstr "音樂創作"
+
+#: ./config.py:39
+msgid "exp_5"
+msgstr "音樂展演"
+
+#: ./config.py:40
+msgid "exp_6"
+msgstr "舞蹈教育"
+
+#: ./config.py:41
+msgid "exp_7"
+msgstr "舞蹈創作"
+
+#: ./config.py:42
+msgid "exp_8"
+msgstr "舞蹈展演"
+
+#: ./config.py:43
+msgid "exp_9"
+msgstr "資優教育"
+
 #: ./config.py:83
 msgid "experts"
 msgstr "專家學者"
@@ -502,154 +650,6 @@ msgstr "專家學者"
 #: ./exclfromnav.py:28
 msgid "help_exclude_from_nav"
 msgstr "是否將本項目置於選單(預設為不列入選單)"
-
-#: ./config.py:35
-msgid "help_exp_01"
-msgstr "美術教育"
-
-#: ./config.py:36
-msgid "help_exp_02"
-msgstr "美術創作"
-
-#: ./config.py:37
-msgid "help_exp_03"
-msgstr "音樂教育"
-
-#: ./config.py:38
-msgid "help_exp_04"
-msgstr "音樂創作"
-
-#: ./config.py:39
-msgid "help_exp_05"
-msgstr "音樂展演"
-
-#: ./config.py:40
-msgid "help_exp_06"
-msgstr "舞蹈教育"
-
-#: ./config.py:41
-msgid "help_exp_07"
-msgstr "舞蹈創作"
-
-#: ./config.py:42
-msgid "help_exp_08"
-msgstr "舞蹈展演"
-
-#: ./config.py:43
-msgid "help_exp_09"
-msgstr "資優教育"
-
-#: ./config.py:44
-msgid "help_exp_10"
-msgstr "藝術課程規劃 "
-
-#: ./config.py:45
-msgid "help_exp_11"
-msgstr "藝術類教學與輔導"
-
-#: ./config.py:46
-msgid "help_exp_12"
-msgstr "創意與設計"
-
-#: ./config.py:47
-msgid "help_exp_13"
-msgstr "電腦科技應用"
-
-#: ./config.py:48
-msgid "help_exp_14"
-msgstr "跨領域"
-
-#: ./config.py:49
-msgid "help_exp_15"
-msgstr "童玩設計"
-
-#: ./config.py:50
-msgid "help_exp_16"
-msgstr "書法"
-
-#: ./config.py:51
-msgid "help_exp_17"
-msgstr "直ㄊ團隊教學，奧福音樂教學"
-
-#: ./config.py:52
-msgid "help_exp_18"
-msgstr "草編藝術"
-
-#: ./config.py:53
-msgid "help_exp_19"
-msgstr "陶藝創作"
-
-#: ./config.py:54
-msgid "help_exp_20"
-msgstr "視覺藝術創作 "
-
-#: ./config.py:55
-msgid "help_exp_21"
-msgstr "陶藝"
-
-#: ./config.py:56
-msgid "help_exp_22"
-msgstr "書法教育"
-
-#: ./config.py:57
-msgid "help_exp_23"
-msgstr "民俗體育藝術"
-
-#: ./config.py:58
-msgid "help_exp_24"
-msgstr "書法教學"
-
-#: ./config.py:59
-msgid "help_exp_25"
-msgstr "書藝教學"
-
-#: ./config.py:60
-msgid "help_exp_26"
-msgstr "風箏教學 室內風箏表演"
-
-#: ./config.py:61
-msgid "help_exp_27"
-msgstr "戲劇"
-
-#: ./config.py:62
-msgid "help_exp_28"
-msgstr "布袋戲"
-
-#: ./config.py:63
-msgid "help_exp_29"
-msgstr "表演藝術"
-
-#: ./config.py:64
-msgid "help_exp_30"
-msgstr "社會科學教育研究所 碩士"
-
-#: ./config.py:65
-msgid "help_exp_31"
-msgstr "舞獅"
-
-#: ./config.py:66
-msgid "help_exp_32"
-msgstr "健康體育"
-
-#: ./config.py:67
-msgid "help_exp_33"
-msgstr "民俗舞師藝術"
-
-#: ./config.py:68
-msgid "help_exp_34"
-msgstr "傳統藝術類"
-
-#: ./config.py:69
-msgid "help_exp_35"
-msgstr "布袋戲團體 "
-
-#: ./config.py:70
-msgid "help_exp_36"
-msgstr "設計教育、設計實務、創意思考、創意表現"
-
-#: ./config.py:71
-msgid "help_exp_37"
-msgstr "音樂賞析"
 
 #: ./config.py:77
 msgid "junior"
