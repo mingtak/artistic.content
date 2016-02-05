@@ -125,7 +125,7 @@
       class=".importdata.ImportImageFolder"
       permission="cmf.ManagePortal"
       />
-
+-->
   <browser:page
       name="importmembers"
       for="zope.interface.Interface"
@@ -133,6 +133,15 @@
       permission="cmf.ManagePortal"
       />
 
+  <browser:page
+      name="deletemembers"
+      for="zope.interface.Interface"
+      class=".importdata.DeleteMembers"
+      permission="cmf.ManagePortal"
+      />
+
+
+<!--
   <browser:page
       name="importschools"
       for="zope.interface.Interface"

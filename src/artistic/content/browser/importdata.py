@@ -275,6 +275,16 @@ class ImportImageFolder(BrowserView):
             logger.info('已匯入：%s' % folderName) """
 
 
+class DeleteMembers(BrowserView):
+
+    def __call__(self):
+        context = self.context
+        portal = api.portal.get()
+        users = api.user.get_users()
+        for user in users:
+            api.user.delete(user=user)
+
+
 
 class ImportMembers(BrowserView):
 
@@ -304,7 +314,6 @@ class ImportMembers(BrowserView):
             logger.info(i)
         #import pdb; pdb.set_trace()
 
-        """
             if item['mm_school'] == 0:
                 schoolName = ''
             else:
@@ -328,7 +337,6 @@ class ImportMembers(BrowserView):
                 properties=properties,
             )
             transaction.commit()
-            """
 
         return
 
