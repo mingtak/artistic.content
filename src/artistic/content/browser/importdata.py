@@ -281,8 +281,15 @@ class DeleteMembers(BrowserView):
         context = self.context
         portal = api.portal.get()
         users = api.user.get_users()
+        count = 0
         for user in users:
-            api.user.delete(user=user)
+            try:
+                api.user.delete(user=user)
+                transaction.commit()
+                count += 1
+                if count > 50:
+                    break
+            except:pass
 
 
 
@@ -306,38 +313,41 @@ class ImportMembers(BrowserView):
         userSet = []
         for item in data:
 
-            userSet.append(u"姓名：%s\t帳號：%s\t密碼：%s" % (
-                safe_unicode(item['mm_name']),
-                safe_unicode(item['mm_account']),
-                safe_unicode(item['mm_password'])))
-        for i in userSet:
-            logger.info(i)
+#            userSet.append(u"姓名：%s\t帳號：%s\t密碼：%s" % (
+#                safe_unicode(item['mm_name']),
+#                safe_unicode(item['mm_account']),
+#                safe_unicode(item['mm_password'])))
+#        for i in userSet:
+#            logger.info(i)
         #import pdb; pdb.set_trace()
 
-            if item['mm_school'] == 0:
-                schoolName = ''
-            else:
-                schoolName = school[str(item['mm_school'])]
+            try:
+                if item['mm_school'] == 0:
+                    schoolName = ''
+                else:
+                    schoolName = school[str(item['mm_school'])]
 
-
-            properties = dict(
-                fullname=item['mm_name'],
-                email='aec.ntnu@gmail.com',
-                email2=item['mm_mail'],
-                school=schoolName,
-                manageTitle=item['mm_title'],
-                gender=item['mm_gender'],
-                tel=item['mm_tel'],
-                fax=item['mm_fax'],
-                mobile=item['mm_mobile'],
-            )
-            user = api.user.create(
-                username=item['mm_account'],
-                password=item['mm_password'],
-                properties=properties,
-            )
-            transaction.commit()
-
+                properties = dict(
+                    fullname=schoolName if schoolName else item['mm_name'],
+                    teacher_name=item['mm_name'] if item['mm_name'] else '',
+                    email='aec.ntnu@gmail.com',
+                    email2=item['mm_mail'],
+                    school=schoolName,
+                    manageTitle=item['mm_title'],
+                    gender=item['mm_gender'],
+                    tel=item['mm_tel'],
+                    fax=item['mm_fax'],
+                    mobile=item['mm_mobile'],
+                    member_password=item['mm_password'],
+                )
+#            import pdb; pdb.set_trace()
+                user = api.user.create(
+                    username=item['mm_account'],
+                    password=item['mm_password'],
+                    properties=properties,
+                )
+                transaction.commit()
+            except:pass
         return
 
 

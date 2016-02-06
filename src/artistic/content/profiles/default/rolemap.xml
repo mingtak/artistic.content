@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<rolemap>
+  <roles>
+    <role name="School"/>
+  </roles>
+
+  <permissions>
+    <permission name="artistic.content: Is School" acquire="False">
+      <role name="School" />
+    </permission>
+  </permissions>
+
+</rolemap>
+
