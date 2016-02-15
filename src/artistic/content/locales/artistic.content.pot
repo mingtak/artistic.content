@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-02-04 01:08+0000\n"
+"POT-Creation-Date: 2016-02-15 06:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,7 @@ msgstr ""
 msgid "2020"
 msgstr ""
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:46
 #: ./viewlet/login_portlet.pt:33
 msgid "Account ID"
 msgstr ""
@@ -146,6 +147,7 @@ msgid "Email Address"
 msgstr ""
 
 #: ./browser/template/cover_view.pt:53
+#: ./browser/template/subproject_folder_view.pt:58
 msgid "Event Information"
 msgstr ""
 
@@ -155,6 +157,14 @@ msgstr ""
 
 #: ./config.py:17
 msgid "Extension Device"
+msgstr ""
+
+#: ./profiles/default/actions.xml
+msgid "Go to old admin platform"
+msgstr ""
+
+#: ./profiles/default/actions.xml
+msgid "Go to school term"
 msgstr ""
 
 #: ./interfaces.py:397
@@ -185,7 +195,7 @@ msgstr ""
 msgid "Image Size must be 720X400(W:H)"
 msgstr ""
 
-#: ./configure.zcml:23
+#: ./configure.zcml:25
 msgid "Installs the artistic.content add-on."
 msgstr ""
 
@@ -206,6 +216,7 @@ msgid "Kinmen County"
 msgstr ""
 
 #: ./browser/template/cover_view.pt:19
+#: ./browser/template/subproject_folder_view.pt:22
 msgid "Latest News"
 msgstr ""
 
@@ -213,6 +224,7 @@ msgstr ""
 msgid "Lienchiang County"
 msgstr ""
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:10
 #: ./viewlet/login_portlet.pt:15
 msgid "Login"
 msgstr ""
@@ -277,6 +289,7 @@ msgstr ""
 msgid "Old Image Folder id"
 msgstr ""
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:73
 #: ./viewlet/login_portlet.pt:38
 msgid "Password"
 msgstr ""
@@ -289,10 +302,12 @@ msgstr ""
 msgid "Pingtung County"
 msgstr ""
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:50
 #: ./viewlet/login_portlet.pt:34
 msgid "Please input ID"
 msgstr ""
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:77
 #: ./viewlet/login_portlet.pt:39
 msgid "Please input password"
 msgstr ""
@@ -326,6 +341,7 @@ msgid "Public or Private School"
 msgstr ""
 
 #: ./browser/template/cover_view.pt:74
+#: ./browser/template/subproject_folder_view.pt:81
 msgid "Published"
 msgstr ""
 
@@ -453,12 +469,16 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: ./configure.zcml:38
+#: ./configure.zcml:40
 msgid "Uninstalls the artistic.content add-on."
 msgstr ""
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:87
+msgid "Warning"
+msgstr ""
+
 #: ./interfaces.py:41
-msgid "Wrong! Image Size must be 720X400(W:H)"
+msgid "Wrong! Image Size must be 720X300(W:H)"
 msgstr ""
 
 #: ./interfaces.py:32
@@ -485,7 +505,7 @@ msgstr ""
 msgid "artistic class"
 msgstr ""
 
-#: ./configure.zcml:23
+#: ./configure.zcml:25
 msgid "artistic.content"
 msgstr ""
 
@@ -493,8 +513,18 @@ msgstr ""
 msgid "artsOrg"
 msgstr ""
 
+#. Default: "Log in"
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:136
+msgid "box_sign_in"
+msgstr ""
+
 #: ./config.py:24
 msgid "dance class"
+msgstr ""
+
+#. Default: "Cookies are not enabled. You must enable cookies before you can log in."
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:90
+msgid "enable_cookies_message_before_login"
 msgstr ""
 
 #: ./config.py:35
@@ -658,9 +688,29 @@ msgstr ""
 msgid "junior"
 msgstr ""
 
+#. Default: "E-mail"
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:59
+msgid "label_email"
+msgstr ""
+
 #. Default: "Exclude from navigation"
 #: ./exclfromnav.py:24
 msgid "label_exclude_from_nav"
+msgstr ""
+
+#. Default: "Log in"
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:98
+msgid "label_log_in"
+msgstr ""
+
+#. Default: "Login Name"
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:50
+msgid "label_login_name"
+msgstr ""
+
+#. Default: "Password"
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:77
+msgid "label_password"
 msgstr ""
 
 #: ./browser/template/folder_newsandevent.pt:30
@@ -671,7 +721,13 @@ msgstr ""
 msgid "latest News"
 msgstr ""
 
+#. Default: "Cookie authentication is disabled. Login portlet not available."
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:141
+msgid "login_portlet_disabled"
+msgstr ""
+
 #: ./browser/template/cover_view.pt:43
+#: ./browser/template/subproject_folder_view.pt:48
 msgid "more..."
 msgstr ""
 

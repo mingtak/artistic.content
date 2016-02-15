@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-02-04 01:08+0000\n"
+"POT-Creation-Date: 2016-02-15 06:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,7 @@ msgstr ""
 msgid "2020"
 msgstr ""
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:46
 #: ./viewlet/login_portlet.pt:33
 msgid "Account ID"
 msgstr "使用者帳號"
@@ -143,6 +144,7 @@ msgid "Email Address"
 msgstr "email信箱"
 
 #: ./browser/template/cover_view.pt:53
+#: ./browser/template/subproject_folder_view.pt:58
 msgid "Event Information"
 msgstr "活動資訊"
 
@@ -153,6 +155,14 @@ msgstr "專長領域"
 #: ./config.py:17
 msgid "Extension Device"
 msgstr "擴充設備"
+
+#: ./profiles/default/actions.xml
+msgid "Go to old admin platform"
+msgstr "填報系統管理端"
+
+#: ./profiles/default/actions.xml
+msgid "Go to school term"
+msgstr "填報系統"
 
 #: ./interfaces.py:397
 msgid "HR Classfication"
@@ -179,10 +189,10 @@ msgid "Hualien County"
 msgstr "花蓮縣"
 
 #: ./interfaces.py:86
-msgid "Image Size must be 720X300(W:H)"
-msgstr "圖檔尺寸寬:高必須為 720:300 px"
+msgid "Image Size must be 720X400(W:H)"
+msgstr "影像尺寸必需為720x400(寬:高)"
 
-#: ./configure.zcml:23
+#: ./configure.zcml:25
 msgid "Installs the artistic.content add-on."
 msgstr "安裝 artistic.content 擴充模組"
 
@@ -203,6 +213,7 @@ msgid "Kinmen County"
 msgstr "金門縣"
 
 #: ./browser/template/cover_view.pt:19
+#: ./browser/template/subproject_folder_view.pt:22
 msgid "Latest News"
 msgstr "最新消息"
 
@@ -210,6 +221,7 @@ msgstr "最新消息"
 msgid "Lienchiang County"
 msgstr "連江縣"
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:10
 #: ./viewlet/login_portlet.pt:15
 msgid "Login"
 msgstr "登入"
@@ -272,8 +284,9 @@ msgstr "新北市"
 
 #: ./interfaces.py:319
 msgid "Old Image Folder id"
-msgstr ""
+msgstr "舊圖檔資料夾ID"
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:73
 #: ./viewlet/login_portlet.pt:38
 msgid "Password"
 msgstr "密碼"
@@ -286,10 +299,12 @@ msgstr "澎湖縣"
 msgid "Pingtung County"
 msgstr "屏東縣"
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:50
 #: ./viewlet/login_portlet.pt:34
 msgid "Please input ID"
 msgstr "請輸入帳號"
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:77
 #: ./viewlet/login_portlet.pt:39
 msgid "Please input password"
 msgstr "請輸入密碼"
@@ -323,6 +338,7 @@ msgid "Public or Private School"
 msgstr "公立或私立學校"
 
 #: ./browser/template/cover_view.pt:74
+#: ./browser/template/subproject_folder_view.pt:81
 msgid "Published"
 msgstr "發佈"
 
@@ -450,9 +466,13 @@ msgstr "桃園市"
 msgid "Title"
 msgstr "標題"
 
-#: ./configure.zcml:38
+#: ./configure.zcml:40
 msgid "Uninstalls the artistic.content add-on."
 msgstr "御載 artistic.content 擴充模組"
+
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:87
+msgid "Warning"
+msgstr "警告"
 
 #: ./interfaces.py:41
 msgid "Wrong! Image Size must be 720X300(W:H)"
@@ -482,7 +502,7 @@ msgstr "藝術家"
 msgid "artistic class"
 msgstr "美術班"
 
-#: ./configure.zcml:23
+#: ./configure.zcml:25
 msgid "artistic.content"
 msgstr ""
 
@@ -490,9 +510,19 @@ msgstr ""
 msgid "artsOrg"
 msgstr "藝術團體"
 
+#. Default: "Log in"
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:136
+msgid "box_sign_in"
+msgstr ""
+
 #: ./config.py:24
 msgid "dance class"
 msgstr "舞蹈班"
+
+#. Default: "Cookies are not enabled. You must enable cookies before you can log in."
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:90
+msgid "enable_cookies_message_before_login"
+msgstr ""
 
 #: ./config.py:35
 msgid "exp_1"
@@ -655,9 +685,29 @@ msgstr "是否將本項目置於選單(預設為不列入選單)"
 msgid "junior"
 msgstr "國中"
 
+#. Default: "E-mail"
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:59
+msgid "label_email"
+msgstr ""
+
 #. Default: "Exclude from navigation"
 #: ./exclfromnav.py:24
 msgid "label_exclude_from_nav"
+msgstr ""
+
+#. Default: "Log in"
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:98
+msgid "label_log_in"
+msgstr ""
+
+#. Default: "Login Name"
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:50
+msgid "label_login_name"
+msgstr ""
+
+#. Default: "Password"
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:77
+msgid "label_password"
 msgstr ""
 
 #: ./browser/template/folder_newsandevent.pt:30
@@ -668,7 +718,13 @@ msgstr "活動資訊"
 msgid "latest News"
 msgstr "最新消息"
 
+#. Default: "Cookie authentication is disabled. Login portlet not available."
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:141
+msgid "login_portlet_disabled"
+msgstr ""
+
 #: ./browser/template/cover_view.pt:43
+#: ./browser/template/subproject_folder_view.pt:48
 msgid "more..."
 msgstr "查看更多..."
 

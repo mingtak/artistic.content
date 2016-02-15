@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-02-04 00:27+0000\n"
+"POT-Creation-Date: 2016-02-15 06:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,7 @@ msgstr ""
 msgid "2020"
 msgstr ""
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:46
 #: ./viewlet/login_portlet.pt:33
 msgid "Account ID"
 msgstr ""
@@ -143,6 +144,7 @@ msgid "Email Address"
 msgstr ""
 
 #: ./browser/template/cover_view.pt:53
+#: ./browser/template/subproject_folder_view.pt:58
 msgid "Event Information"
 msgstr ""
 
@@ -152,6 +154,14 @@ msgstr ""
 
 #: ./config.py:17
 msgid "Extension Device"
+msgstr ""
+
+#: ./profiles/default/actions.xml
+msgid "Go to old admin platform"
+msgstr ""
+
+#: ./profiles/default/actions.xml
+msgid "Go to school term"
 msgstr ""
 
 #: ./interfaces.py:397
@@ -182,7 +192,7 @@ msgstr ""
 msgid "Image Size must be 720X400(W:H)"
 msgstr ""
 
-#: ./configure.zcml:23
+#: ./configure.zcml:25
 msgid "Installs the artistic.content add-on."
 msgstr ""
 
@@ -203,6 +213,7 @@ msgid "Kinmen County"
 msgstr ""
 
 #: ./browser/template/cover_view.pt:19
+#: ./browser/template/subproject_folder_view.pt:22
 msgid "Latest News"
 msgstr ""
 
@@ -210,6 +221,7 @@ msgstr ""
 msgid "Lienchiang County"
 msgstr ""
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:10
 #: ./viewlet/login_portlet.pt:15
 msgid "Login"
 msgstr ""
@@ -274,6 +286,7 @@ msgstr ""
 msgid "Old Image Folder id"
 msgstr ""
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:73
 #: ./viewlet/login_portlet.pt:38
 msgid "Password"
 msgstr ""
@@ -286,10 +299,12 @@ msgstr ""
 msgid "Pingtung County"
 msgstr ""
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:50
 #: ./viewlet/login_portlet.pt:34
 msgid "Please input ID"
 msgstr ""
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:77
 #: ./viewlet/login_portlet.pt:39
 msgid "Please input password"
 msgstr ""
@@ -323,6 +338,7 @@ msgid "Public or Private School"
 msgstr ""
 
 #: ./browser/template/cover_view.pt:74
+#: ./browser/template/subproject_folder_view.pt:81
 msgid "Published"
 msgstr ""
 
@@ -450,12 +466,16 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: ./configure.zcml:38
+#: ./configure.zcml:40
 msgid "Uninstalls the artistic.content add-on."
 msgstr ""
 
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:87
+msgid "Warning"
+msgstr ""
+
 #: ./interfaces.py:41
-msgid "Wrong! Image Size must be 720X400(W:H)"
+msgid "Wrong! Image Size must be 720X300(W:H)"
 msgstr ""
 
 #: ./interfaces.py:32
@@ -482,7 +502,7 @@ msgstr ""
 msgid "artistic class"
 msgstr ""
 
-#: ./configure.zcml:23
+#: ./configure.zcml:25
 msgid "artistic.content"
 msgstr ""
 
@@ -490,8 +510,166 @@ msgstr ""
 msgid "artsOrg"
 msgstr ""
 
+#. Default: "Log in"
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:136
+msgid "box_sign_in"
+msgstr ""
+
 #: ./config.py:24
 msgid "dance class"
+msgstr ""
+
+#. Default: "Cookies are not enabled. You must enable cookies before you can log in."
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:90
+msgid "enable_cookies_message_before_login"
+msgstr ""
+
+#: ./config.py:35
+msgid "exp_1"
+msgstr ""
+
+#: ./config.py:44
+msgid "exp_10"
+msgstr ""
+
+#: ./config.py:45
+msgid "exp_11"
+msgstr ""
+
+#: ./config.py:46
+msgid "exp_12"
+msgstr ""
+
+#: ./config.py:47
+msgid "exp_13"
+msgstr ""
+
+#: ./config.py:48
+msgid "exp_14"
+msgstr ""
+
+#: ./config.py:49
+msgid "exp_15"
+msgstr ""
+
+#: ./config.py:50
+msgid "exp_16"
+msgstr ""
+
+#: ./config.py:51
+msgid "exp_17"
+msgstr ""
+
+#: ./config.py:52
+msgid "exp_18"
+msgstr ""
+
+#: ./config.py:53
+msgid "exp_19"
+msgstr ""
+
+#: ./config.py:36
+msgid "exp_2"
+msgstr ""
+
+#: ./config.py:54
+msgid "exp_20"
+msgstr ""
+
+#: ./config.py:55
+msgid "exp_21"
+msgstr ""
+
+#: ./config.py:56
+msgid "exp_22"
+msgstr ""
+
+#: ./config.py:57
+msgid "exp_23"
+msgstr ""
+
+#: ./config.py:58
+msgid "exp_24"
+msgstr ""
+
+#: ./config.py:59
+msgid "exp_25"
+msgstr ""
+
+#: ./config.py:60
+msgid "exp_26"
+msgstr ""
+
+#: ./config.py:61
+msgid "exp_27"
+msgstr ""
+
+#: ./config.py:62
+msgid "exp_28"
+msgstr ""
+
+#: ./config.py:63
+msgid "exp_29"
+msgstr ""
+
+#: ./config.py:37
+msgid "exp_3"
+msgstr ""
+
+#: ./config.py:64
+msgid "exp_30"
+msgstr ""
+
+#: ./config.py:65
+msgid "exp_31"
+msgstr ""
+
+#: ./config.py:66
+msgid "exp_32"
+msgstr ""
+
+#: ./config.py:67
+msgid "exp_33"
+msgstr ""
+
+#: ./config.py:68
+msgid "exp_34"
+msgstr ""
+
+#: ./config.py:69
+msgid "exp_35"
+msgstr ""
+
+#: ./config.py:70
+msgid "exp_36"
+msgstr ""
+
+#: ./config.py:71
+msgid "exp_37"
+msgstr ""
+
+#: ./config.py:38
+msgid "exp_4"
+msgstr ""
+
+#: ./config.py:39
+msgid "exp_5"
+msgstr ""
+
+#: ./config.py:40
+msgid "exp_6"
+msgstr ""
+
+#: ./config.py:41
+msgid "exp_7"
+msgstr ""
+
+#: ./config.py:42
+msgid "exp_8"
+msgstr ""
+
+#: ./config.py:43
+msgid "exp_9"
 msgstr ""
 
 #: ./config.py:83
@@ -503,161 +681,33 @@ msgstr ""
 msgid "help_exclude_from_nav"
 msgstr ""
 
-#: ./config.py:35
-msgid "help_exp_01"
-msgstr ""
-
-#: ./config.py:36
-msgid "help_exp_02"
-msgstr ""
-
-#: ./config.py:37
-msgid "help_exp_03"
-msgstr ""
-
-#: ./config.py:38
-msgid "help_exp_04"
-msgstr ""
-
-#: ./config.py:39
-msgid "help_exp_05"
-msgstr ""
-
-#: ./config.py:40
-msgid "help_exp_06"
-msgstr ""
-
-#: ./config.py:41
-msgid "help_exp_07"
-msgstr ""
-
-#: ./config.py:42
-msgid "help_exp_08"
-msgstr ""
-
-#: ./config.py:43
-msgid "help_exp_09"
-msgstr ""
-
-#: ./config.py:44
-msgid "help_exp_10"
-msgstr ""
-
-#: ./config.py:45
-msgid "help_exp_11"
-msgstr ""
-
-#: ./config.py:46
-msgid "help_exp_12"
-msgstr ""
-
-#: ./config.py:47
-msgid "help_exp_13"
-msgstr ""
-
-#: ./config.py:48
-msgid "help_exp_14"
-msgstr ""
-
-#: ./config.py:49
-msgid "help_exp_15"
-msgstr ""
-
-#: ./config.py:50
-msgid "help_exp_16"
-msgstr ""
-
-#: ./config.py:51
-msgid "help_exp_17"
-msgstr ""
-
-#: ./config.py:52
-msgid "help_exp_18"
-msgstr ""
-
-#: ./config.py:53
-msgid "help_exp_19"
-msgstr ""
-
-#: ./config.py:54
-msgid "help_exp_20"
-msgstr ""
-
-#: ./config.py:55
-msgid "help_exp_21"
-msgstr ""
-
-#: ./config.py:56
-msgid "help_exp_22"
-msgstr ""
-
-#: ./config.py:57
-msgid "help_exp_23"
-msgstr ""
-
-#: ./config.py:58
-msgid "help_exp_24"
-msgstr ""
-
-#: ./config.py:59
-msgid "help_exp_25"
-msgstr ""
-
-#: ./config.py:60
-msgid "help_exp_26"
-msgstr ""
-
-#: ./config.py:61
-msgid "help_exp_27"
-msgstr ""
-
-#: ./config.py:62
-msgid "help_exp_28"
-msgstr ""
-
-#: ./config.py:63
-msgid "help_exp_29"
-msgstr ""
-
-#: ./config.py:64
-msgid "help_exp_30"
-msgstr ""
-
-#: ./config.py:65
-msgid "help_exp_31"
-msgstr ""
-
-#: ./config.py:66
-msgid "help_exp_32"
-msgstr ""
-
-#: ./config.py:67
-msgid "help_exp_33"
-msgstr ""
-
-#: ./config.py:68
-msgid "help_exp_34"
-msgstr ""
-
-#: ./config.py:69
-msgid "help_exp_35"
-msgstr ""
-
-#: ./config.py:70
-msgid "help_exp_36"
-msgstr ""
-
-#: ./config.py:71
-msgid "help_exp_37"
-msgstr ""
-
 #: ./config.py:77
 msgid "junior"
+msgstr ""
+
+#. Default: "E-mail"
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:59
+msgid "label_email"
 msgstr ""
 
 #. Default: "Exclude from navigation"
 #: ./exclfromnav.py:24
 msgid "label_exclude_from_nav"
+msgstr ""
+
+#. Default: "Log in"
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:98
+msgid "label_log_in"
+msgstr ""
+
+#. Default: "Login Name"
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:50
+msgid "label_login_name"
+msgstr ""
+
+#. Default: "Password"
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:77
+msgid "label_password"
 msgstr ""
 
 #: ./browser/template/folder_newsandevent.pt:30
@@ -668,7 +718,13 @@ msgstr ""
 msgid "latest News"
 msgstr ""
 
+#. Default: "Cookie authentication is disabled. Login portlet not available."
+#: ./browser/overrides/plone.app.portlets.portlets.login.pt:141
+msgid "login_portlet_disabled"
+msgstr ""
+
 #: ./browser/template/cover_view.pt:43
+#: ./browser/template/subproject_folder_view.pt:48
 msgid "more..."
 msgstr ""
 

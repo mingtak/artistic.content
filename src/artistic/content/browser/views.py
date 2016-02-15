@@ -29,7 +29,11 @@ class Go_To_Old_Admin(BrowserView):
     def __call__(self):
         request = self.request
         response = request.response
-        response.redirect('http://140.122.118.108/admin')
+        user = api.user.get_current()
+        userId = user.getProperty('id')
+        userPassword = user.getProperty('member_password')
+#        response.redirect('http://140.122.118.108/admin')
+        response.redirect('http://140.122.118.108/admin/login_ex.php?username=%s&pwd=%s' % (userId, userPassword))
         return
 
 
