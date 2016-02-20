@@ -88,6 +88,10 @@ class SchoolInfoView(BrowserView):
     """
 
 
+class AlbumView(BrowserView):
+    """ Album View (default)
+    """
+
 class Is_Anonymous(BrowserView):
 
     def __call__(self):

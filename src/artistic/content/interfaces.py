@@ -8,15 +8,21 @@ from plone.namedfile.field import NamedBlobImage
 from plone.directives import form, dexterity
 from zope.interface import Interface
 from z3c.form.browser.checkbox import CheckBoxFieldWidget
-
 from collective import dexteritytextindexer
-
-from config import HR_CLASSFICATION, CITY, CITY_WITHOUT_ALL, SERVICE_LEVEL, EXPERTISE, PUBLIC_OR_PRIVATE, ART_CLASSFICATION, DEVICE_CLASSFICATION, SETTABLE_YEARS
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 from plone.formwidget.autocomplete import AutocompleteFieldWidget
 from z3c.relationfield.schema import RelationList, RelationChoice
-
 from zope.interface import Invalid
+
+from config import HR_CLASSFICATION
+from config import CITY
+from config import CITY_WITHOUT_ALL
+from config import SERVICE_LEVEL
+from config import EXPERTISE
+from config import PUBLIC_OR_PRIVATE
+from config import ART_CLASSFICATION
+from config import DEVICE_CLASSFICATION
+from config import SETTABLE_YEARS
 
 
 class IArtisticContentLayer(IDefaultBrowserLayer):
@@ -427,5 +433,18 @@ class IHrDb(Interface):
         value_type=schema.Choice(
             vocabulary=CITY),
         required=True,
+    )
+
+
+class IAlbum(Interface):
+
+    title = schema.TextLine(
+        title=_(u"Title"),
+        required=True,
+    )
+
+    description = schema.Text(
+        title=_(u"Description"),
+        required=False,
     )
 

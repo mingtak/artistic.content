@@ -96,6 +96,14 @@
       />
 
   <browser:page
+      name="album_view"
+      for="artistic.content.interfaces.IAlbum"
+      class=".views.AlbumView"
+      template="template/album_view.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
       name="get_portal_id"
       for="zope.interface.Interface"
       class=".views.GetPortalId"

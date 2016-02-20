@@ -5,4 +5,5 @@
   <object name="DeviceBudget" meta_type="Dexterity FTI"/>
   <object name="Cover" meta_type="Dexterity FTI"/>
   <object name="SubProject" meta_type="Dexterity FTI"/>
+  <object name="Album" meta_type="Dexterity FTI"/>
 </object>
