@@ -28,7 +28,7 @@
                             <!-- Blog post -->
                             <article class="item">
                                 <div class="item_header">
-                                    <a tal:attributes="href result/getURL">
+                                    <a tal:attributes="href result/getURL" tal:condition="python:modules['plone'].api.user.is_anonymous()">
                                       <img tal:attributes="alt result/Title; src string:${result/getURL}/@@images/image_1/preview"
                                            tal:condition="python:result.getObject().image_1">
                                       <img tal:attributes="alt result/Title; src python:'%s/@@images/image/preview' % result.getObject().relatedImages[0].to_object.absolute_url()" 
@@ -44,7 +44,19 @@
   </tal:x>
 </div>
 
-    <ul class="page-numbers">
+
+
+  <p tal:condition="python:not modules['plone'].api.user.is_anonymous()">
+    <a tal:condition="previous"
+       tal:attributes="href string:${request/URL0}?start:int=${previous/first}"
+       href="previous_url">上 <span tal:replace="previous/length">20</span> 筆</a>
+    <a tal:condition="next"
+       tal:attributes="href string:${request/URL0}?start:int=${next/first}"
+       href="next_url">下 <span tal:replace="next/length">20</span> 筆</a>
+  </p>
+
+
+    <ul class="page-numbers" tal:condition="python:modules['plone'].api.user.is_anonymous()">
         <li>
             <a tal:condition="previous" class="previous page-numbers"
                tal:attributes="href string:${request/URL0}?start:int=${previous/first}"
