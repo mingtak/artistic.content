@@ -37,6 +37,10 @@ class Go_To_Old_Admin(BrowserView):
         return
 
 
+class SchoolListingView(BrowserView):
+    """ School listing view """
+
+
 class SubprojectFolderView(BrowserView):
     """ subproject folder view """
 

@@ -1,0 +1,66 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/main_template/macros/master"
+    i18n:domain="artistic.content">
+<body>
+
+<metal:content-core fill-slot="content-core">
+<metal:block define-macro="content-core">
+
+
+
+
+  <section tal:define="results python:context.portal_catalog({'Type':'SchoolInfo'});
+                    start request/start|python:0;
+                    batch python:modules['ZTUtils'].Batch(results, 
+                                                          size=20, 
+                                                          start=start);
+                    previous python:batch.previous;
+                    next python:batch.next">
+
+<div class="article_list_view">
+  <tal:x repeat="result batch" >
+
+
+                            <!-- Blog post -->
+                            <article class="item">
+                                <div class="item_header">
+                                    <a tal:attributes="href result/getURL">
+                                      <img tal:attributes="alt result/Title; src string:${result/getURL}/@@images/image_1/preview"
+                                           tal:condition="python:result.getObject().image_1">
+                                      <img tal:attributes="alt result/Title; src python:'%s/@@images/image/preview' % result.getObject().relatedImages[0].to_object.absolute_url()" 
+                                           tal:condition="python:not result.getObject().image_1 and result.getObject().relatedImages">
+                                    </a>
+                                </div>
+                                <div class="item_content">
+                                    <h3><a tal:attributes="href result/getURL" tal:content="result/Title" /></h3>
+                                    <p tal:content="result/Description" />
+                                </div>
+                            </article>
+ 
+  </tal:x>
+</div>
+
+    <ul class="page-numbers">
+        <li>
+            <a tal:condition="previous" class="previous page-numbers"
+               tal:attributes="href string:${request/URL0}?start:int=${previous/first}"
+               href="previous_url"><i class="fa fa-caret-left"/>上一頁</a>
+        </li>
+        <li>
+            <a tal:condition="next" class="next page-numbers"
+               tal:attributes="href string:${request/URL0}?start:int=${next/first}"
+               href="next_url">下一頁<i class="fa fa-caret-right"/></a>
+        </li>
+    </ul>
+
+</section>
+
+</metal:block>
+</metal:content-core>
+
+</body>
+</html>

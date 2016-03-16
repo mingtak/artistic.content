@@ -9,7 +9,16 @@
 from plone import api
 
 is_anonymous = api.user.is_anonymous()
-socialClass = ['yellowbg',
+socialClass = ['graybg',
+    'graybg',
+    'graybg',
+    'graybg',
+    'graybg',
+    'graybg',
+    'graybg',
+    'graybg',
+    'graybg',]
+socialClass_bak = ['yellowbg',
     'facebook',
     'twitter',
     'pinterest',
@@ -30,7 +39,7 @@ socialClass = ['yellowbg',
                                     <div tal:attributes="class python:'app_social %s' % socialClass[repeat['item'].index % 9]">
                                         <a tal:attributes="href item/url" class="subproject_face">
                                             <section class="app_icon">
-                                              <img tal:attributes="src string:${item/getURL}/@@images/image/mini;
+                                              <img tal:attributes="src string:${item/getURL}/@@images/image/preview;
                                                                    title item/Title"/>
                                             </section>
 <!--                                            <span class="app_type" tal:content="item/Title">子計畫名稱</span> -->

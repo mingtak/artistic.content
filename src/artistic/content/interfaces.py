@@ -32,6 +32,8 @@ class IArtisticContentLayer(IDefaultBrowserLayer):
 def checkImage1_1(image):
     """Check Image width:height is 2:1
     """
+    # 暫時先不對子計畫logo做檢查
+    return True
     imageSize = image.getImageSize()
     if imageSize[0] == 2 * imageSize[1]:
         return True
