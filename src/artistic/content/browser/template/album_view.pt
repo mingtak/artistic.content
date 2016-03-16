@@ -12,7 +12,25 @@
 <metal:content-core define-macro="content-core"
                     tal:define="toc context/table_of_contents|nothing;">
 
-<h3 tal:content="context/title">Title</h3>
+
+<!-- Post content -->
+<div class="post_content" tal:condition="context/@@is_anonymous">
+    <div class="gallery_single_post"
+         tal:define="childNodes python:context.getChildNodes()">
+        <div tal:repeat="item childNodes">
+                <img tal:attributes="src string:${item/absolute_url}/@@images/image/large;
+                                     alt item/title" />
+        </div>
+    </div>
+</div>
+
+
+<div tal:condition="not:context/@@is_anonymous">
+    <div tal:define="childNodes python:context.getChildNodes()">
+        <img tal:repeat="item childNodes" tal:attributes="src string:${item/absolute_url}/@@images/image/thumb" />
+    </div>
+</div>
+
 
 
 </metal:content-core>

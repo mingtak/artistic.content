@@ -1,0 +1,80 @@
+<?python
+from plone import api
+is_anonymous = api.user.is_anonymous()
+?>
+
+<nav id="portal-breadcrumbs" class="plone-breadcrumb" role="navigation"
+         i18n:domain="plone"
+         tal:define="breadcrumbs view/breadcrumbs">
+  <div class="container" tal:condition="not:is_anonymous">
+    <span id="breadcrumbs-you-are-here" class="hiddenStructure"
+            i18n:translate="you_are_here">You are here:</span>
+    <ol aria-labelledby="breadcrumbs-you-are-here">
+      <li id="breadcrumbs-home">
+        <a i18n:translate="tabs_home"
+            tal:attributes="href view/navigation_root_url">Home</a>
+      </li>
+      <li tal:repeat="crumb breadcrumbs"
+          tal:attributes="id string:breadcrumbs-${repeat/crumb/number};">
+        <tal:item tal:define="is_last repeat/crumb/end;
+                                url crumb/absolute_url;
+                                title crumb/Title">
+          <a href="#"
+              tal:omit-tag="not: url"
+              tal:condition="python:not is_last"
+              tal:attributes="href url"
+              tal:content="title">
+                  crumb
+          </a>
+          <span id="breadcrumbs-current"
+                tal:condition="is_last"
+                tal:content="title">crumb</span>
+        </tal:item>
+      </li>
+    </ol>
+  </div>
+</nav>
+
+
+
+
+
+<nav id="portal-breadcrumbs" class="plone-breadcrumb" role="navigation"
+         i18n:domain="plone"
+         tal:define="breadcrumbs view/breadcrumbs"
+         tal:condition="python:context.Type() != 'Cover'">
+  <div class="breaking_news">
+  <div class="container" tal:condition="python:is_anonymous">
+
+    <div class="breaking_news_title" i18n:translate="you_are_here">You are here:</div>
+
+    <div class="breaking_news_container">
+      <div>
+        <a i18n:translate="tabs_home"
+           tal:attributes="href view/navigation_root_url">Home</a>
+        <span> > </span>
+      <tal:items repeat="crumb breadcrumbs">
+        <tal:item tal:define="is_last repeat/crumb/end;
+                                url crumb/absolute_url;
+                                title crumb/Title">
+          <a href="#"
+              tal:omit-tag="not: url"
+              tal:condition="python:not is_last"
+              tal:attributes="href url"
+              tal:content="title">
+                  crumb
+          </a>
+          <span id="breadcrumbs-current"
+                tal:condition="is_last"
+                tal:content="title">crumb</span>
+        </tal:item>
+        <span tal:condition="not:repeat/crumb/end"> > </span>
+      </tal:items>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</nav>

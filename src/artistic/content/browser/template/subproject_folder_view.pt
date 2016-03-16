@@ -95,6 +95,53 @@ portal = api.portal.get()
 
 
 
+
+
+<hr/>
+
+<section class="cover_event_listing">
+                                
+                        <!-- Title section -->
+                        <h5 class="title_section" i18n:translate="">Album List</h5> 
+
+    <tal:getItem define="catalog python:context.portal_catalog;
+                    brain python:catalog({'Type':'Album',
+                                          'review_state':'published',
+                                          'path':'/Artistic/subproject/%s' % context.id},
+                                 sort_on='modified', sort_order='reverse')"
+                 repeat="item brain">
+
+                        <div class="article_list_view">
+
+                            <!-- Blog post -->
+                            <article class="item">
+                                <div class="item_header">
+                                    <a tal:attributes="href item/getURL">
+                                      <img tal:attributes="src python:'%s/@@images/image/mini' % item.getObject().getChildNodes()[0].absolute_url()" alt="Post">
+                                    </a>
+                                </div>
+                                <div class="item_content">
+                                    <h3><a tal:attributes="href item/getURL" tal:content="item/Title"></a></h3>
+                                    <div class="entry_meta">
+                                        <span><i class="fa fa-clock-o"></i>
+                                              <tal:date replace="python:item.modified.strftime('%Y / %m / %d')" />
+                                              <tal:published i18n:translate="">Published</tal:published>
+                                        </span>
+
+                                    </div>
+                                    <p tal:content="item/Description" />
+
+                                </div>
+                            </article>
+                        </div>
+    </tal:getItem>
+<a tal:attributes="href string:${context/absolute_url}/albums" 
+   style="float:right" class="btn btn_blue"
+   i18n:translate="">more...</a>
+</section>
+
+
+
 </metal:content-core>
 </metal:content-core>
 

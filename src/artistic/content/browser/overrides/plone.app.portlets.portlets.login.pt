@@ -95,7 +95,7 @@ is_anonymous = api.user.is_anonymous()
 
             <div class="formControls">
 
-                <input class="context btn_small btn btn_green"
+                <input class="context btn_small btn btn_purple"
                        type="submit"
                        name="submit"
                        value="Log in"
