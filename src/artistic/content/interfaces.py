@@ -101,6 +101,12 @@ class ICover(Interface):
         required=True,
     )
 
+    url_1 = schema.URI(
+        title=_(u"Url For Slider 1"),
+        description=_(u"Must be include http:// or https://"),
+        required=False,
+    )
+
     slider2 = NamedBlobImage(
         title=_(u"Cover Slider 2"),
         description=_(u"Image Size must be 720X400(W:H)"),
@@ -110,6 +116,12 @@ class ICover(Interface):
 
     slogan2 = schema.TextLine(
         title=_(u"Cover Slogan 2"),
+        required=False,
+    )
+
+    url_2 = schema.URI(
+        title=_(u"Url For Slider 2"),
+        description=_(u"Must be include http:// or https://"),
         required=False,
     )
 
@@ -125,6 +137,11 @@ class ICover(Interface):
         required=False,
     )
 
+    url_3 = schema.URI(
+        title=_(u"Url For Slider 3"),
+        description=_(u"Must be include http:// or https://"),
+        required=False,
+    )
 
 class IDeviceBudget(Interface):
 
