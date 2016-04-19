@@ -12,7 +12,7 @@
 <metal:content-core define-macro="content-core"
                     tal:define="toc context/table_of_contents|nothing;">
 
-
+<!--
 <ul class="simple-post-list">
     <tal:brain define="brain context/getChildNodes;
                        catalog python:context.portal_catalog;
@@ -27,27 +27,45 @@
         </li>
     </tal:brain>
 </ul>
-
-
-
-
-
-
-<!--
-<div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true, "autoPlay": true}'>
-
-<tal:check_anonymous condition="context/@@is_anonymous">
-  <tal:repeat repeat="item context/relatedItems">
-    <div>
-        <div class="thumbnail">
-            <img tal:replace="structure item/to_object/@@images/image" />
-        </div>
-    </div>
-  </tal:repeat>
-</tal:check_anonymous>
-
-</div>
 -->
+
+
+
+
+
+
+
+
+
+<?python
+from plone import api
+from DateTime import DateTime
+brain3 = econtext['context'].getChildNodes()
+results = []
+for i in range(len(brain3)):
+    if brain3[i].Type() in ['Page', 'Folder'] and \
+       api.content.get_state(brain3[i]) == 'published' and \
+       (hasattr(brain3[i], 'effective') and DateTime() > brain3[i].effective()) and \
+       (brain3[i].expires() is None or DateTime() < brain3[i].expires()):
+        results.append(brain3[i])
+?>
+
+
+<hr/>
+<table style="border:0">
+    <tal:brain repeat="item python:range(len(results))">
+<tr tal:condition="python:repeat['item'].even">
+  <td style="border:0">
+    <h4><i class="icon icon-folder-open"></i>
+    <a tal:content="python:results[item].Title()" tal:attributes="href python:results[item].absolute_url()">odd</a></h4>
+  </td>
+  <td style="border:0" tal:condition="not:repeat/item/end">
+    <h4><i class="icon icon-folder-open"></i>
+    <a tal:content="python:results[item+1].Title()"  tal:attributes="href python:results[item+1].absolute_url()">even</a></h4>
+  </td>
+</tr>
+   </tal:brain>
+</table>
 
 
 </metal:content-core>
