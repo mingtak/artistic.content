@@ -13,24 +13,14 @@
                     tal:define="toc context/table_of_contents|nothing;">
 
 
-<!-- Post content -->
-<div class="post_content" tal:condition="context/@@is_anonymous">
-    <div class="gallery_single_post"
-         tal:define="childNodes python:context.getChildNodes()">
-        <div tal:repeat="item childNodes">
-                <img tal:attributes="src string:${item/absolute_url}/@@images/image/large;
-                                     alt item/title" />
-        </div>
-    </div>
-</div>
-
-
-<div tal:condition="not:context/@@is_anonymous">
-    <div tal:define="childNodes python:context.getChildNodes()">
-        <img tal:repeat="item childNodes" tal:attributes="src string:${item/absolute_url}/@@images/image/thumb" />
-    </div>
-</div>
-
+                        <div class="main_slider" tal:define="childNodes python:context.getChildNodes()">
+                            <!-- Slide -->
+                            <div class="owl-item slide" tal:repeat="item childNodes">
+                                  <img tal:attributes="src python:'%s/@@images/image/large' % item.absolute_url();
+                                                       alt item/Title">
+                                  <h5 tal:content="item/Title"/>
+                            </div>
+                        </div>
 
 
 </metal:content-core>
