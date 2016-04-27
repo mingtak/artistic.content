@@ -112,6 +112,14 @@
       />
 
   <browser:page
+      name="download_view"
+      for="plone.app.contenttypes.interfaces.IFolder"
+      class=".views.DownloadView"
+      template="template/download_view.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
       name="get_portal_id"
       for="zope.interface.Interface"
       class=".views.GetPortalId"

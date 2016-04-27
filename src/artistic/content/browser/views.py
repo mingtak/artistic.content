@@ -96,6 +96,12 @@ class AlbumView(BrowserView):
     """ Album View (default)
     """
 
+
+class DownloadView(BrowserView):
+    """ Download View
+    """
+
+
 class Is_Anonymous(BrowserView):
 
     def __call__(self):
