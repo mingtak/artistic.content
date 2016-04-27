@@ -17,9 +17,15 @@ portal = api.portal.get()
 ?>
 
 <section class="cover_news_listing">
+  <h5 class="title_section">
+    <a tal:attributes="href string:${context/absolute_url}/download/@@download_view">檔案下載</a>
+  </h5>
+</section>
+
+<section class="cover_news_listing">
 
                         <!-- Title section -->
-                        <h5 class="title_section" i18n:translate="">Latest News</h5> 
+                        <h5 class="title_section" i18n:translate="">Latest News</h5>
                         <!-- Article list view -->
                         <div class="article_list_view">
 
