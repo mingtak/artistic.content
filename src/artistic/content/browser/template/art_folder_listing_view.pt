@@ -24,7 +24,7 @@
                     brain2 python:catalog({'Type':'News Item', 'review_state':'published'},
                                   sort_on='modified', sort_order='reverse')"
         tal:repeat="item brain">
-        <tr tal:condition="python:item.Type() != 'Image'">
+        <tr tal:condition="python:item.Type() not in ['Image', 'File']">
           <td style="width:70%">
             <a tal:content="item/Title"
                tal:attributes="href item/absolute_url;
