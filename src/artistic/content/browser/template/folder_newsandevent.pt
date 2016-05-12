@@ -12,54 +12,89 @@
 <metal:content-core define-macro="content-core"
                     tal:define="toc context/table_of_contents|nothing;">
 
-<h3 id="news_listing" i18n:translate="">latest News</h3>
-<ul class="simple-post-list">
-    <tal:brain define="brain context/getChildNodes;"
-        tal:repeat="item brain">
-        <li style="width:70%" tal:condition="python:item.Type() in ['News Item']">
-<h4>
-<i class="icon icon-folder-open" />
-          <a tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
-</h4>
-        </li>
-    </tal:brain>
-</ul>
+
+
+
+
+
+
+
+
+<section class="cover_news_listing">
+
+                        <!-- Title section -->
+                        <h5 id="news_listing" class="title_section" i18n:translate="">Latest News</h5> 
+                        <!-- Article list view -->
+                        <div class="article_list_view">
+
+    <tal:getItem define="catalog python:context.portal_catalog;
+                    brain python:catalog({'Type':'News Item', 'review_state':'published'},
+                                 sort_on='modified', sort_order='reverse')"
+                 repeat="item brain">
+
+
+                                <div class="widget_timeline_posts">
+                                    <div class="item cover">
+                                        <span class="date" tal:content="python:item.modified.strftime('%m / %d')">12 / 11</span>
+                                        <span class="time" tal:content="python:item.modified.strftime('%I:%M %p')">12:15 AM</span>
+                                        <div class="timeline_content">
+                                            <div class="pin_holder"><div class="inside"></div></div>
+                                            <h3><a tal:attributes="href item/getURL" tal:content="item/Title">103學年度高級中等學校藝術才能(資優)班訪視實施計畫</a></h3>
+                                            <span tal:condition="context/@@is_anonymous" tal:content="item/Description"/>
+                                        </div>
+                                    </div>
+                                </div>
+                         
+   </tal:getItem>
+</div>
+<a tal:attributes="href string:${context/absolute_url}/news#news_listing"
+   style="float:right" class="btn btn_purple"
+   i18n:translate="">more...</a>
+</section>
 
 <hr/>
 
-<h3 id="event_listing" i18n:translate="">latest Event</h3>
-<ul class="simple-post-list">
-    <tal:brain define="brain context/getChildNodes;"
-        tal:repeat="item brain">
-        <li style="width:70%" tal:condition="python:item.Type() in ['Event']">
-<h4>
-<i class="icon icon-folder-open" />
-          <a tal:content="item/Title" tal:attributes="href item/absolute_url">標題</a>
-</h4>
-        </li>
-    </tal:brain>
-</ul>
+<section class="cover_event_listing">
+                                
+                        <!-- Title section -->
+                        <h5 id="event_listing" class="title_section" i18n:translate="">Event Information</h5> 
+
+    <tal:getItem define="catalog python:context.portal_catalog;
+                    brain python:catalog({'Type':'Event', 'review_state':'published'},
+                                 sort_on='modified', sort_order='reverse')"
+                 repeat="item brain">
+
+                        <div class="article_list_view">
+
+                            <!-- Blog post -->
+                            <article class="item">
+                                <div class="item_header">
+                                    <a tal:attributes="href item/getURL">
+                                      <img tal:attributes="src string:${item/getURL}/@@images/image/preview" alt="Post">
+                                    </a>
+                                </div>
+                                <div class="item_content">
+                                    <h3><a tal:attributes="href item/getURL" tal:content="item/Title"></a></h3>
+                                    <div class="entry_meta">
+                                        <span><i class="fa fa-clock-o"></i>
+                                              <tal:date replace="python:item.modified.strftime('%Y / %m / %d')" />
+                                              <tal:published i18n:translate="">Published</tal:published>
+                                        </span>
+
+                                    </div>
+                                    <p tal:content="item/Description" />
+
+                                </div>
+                            </article>
+                        </div>
+    </tal:getItem>
+<a tal:attributes="href string:${context/absolute_url}/news#event_listing" 
+   style="float:right" class="btn btn_orange"
+   i18n:translate="">more...</a>
+</section>
 
 
 
-
-
-
-<!--
-<div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true, "autoPlay": true}'>
-
-<tal:check_anonymous condition="context/@@is_anonymous">
-  <tal:repeat repeat="item context/relatedItems">
-    <div>
-        <div class="thumbnail">
-            <img tal:replace="structure item/to_object/@@images/image" />
-        </div>
-    </div>
-  </tal:repeat>
-</tal:check_anonymous>
-
-</div>
--->
 
 
 </metal:content-core>
