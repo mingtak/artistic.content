@@ -91,7 +91,7 @@ class ICover(Interface):
 
     slider1 = NamedBlobImage(
         title=_(u"Cover Slider 1"),
-        description=_(u"Image Size must be 720X400(W:H)"),
+        description=_(u"Image Size must be 720X300(W:H)"),
         constraint=checkCoverImage,
         required=True,
     )
@@ -109,7 +109,7 @@ class ICover(Interface):
 
     slider2 = NamedBlobImage(
         title=_(u"Cover Slider 2"),
-        description=_(u"Image Size must be 720X400(W:H)"),
+        description=_(u"Image Size must be 720X300(W:H)"),
         constraint=checkCoverImage,
         required=False,
     )
@@ -127,7 +127,7 @@ class ICover(Interface):
 
     slider3 = NamedBlobImage(
         title=_(u"Cover Slider 3"),
-        description=_(u"Image Size must be 720X400(W:H)"),
+        description=_(u"Image Size must be 720X300(W:H)"),
         constraint=checkCoverImage,
         required=False,
     )
@@ -142,6 +142,43 @@ class ICover(Interface):
         description=_(u"Must be include http:// or https://"),
         required=False,
     )
+
+    slider4 = NamedBlobImage(
+        title=_(u"Cover Slider 4"),
+        description=_(u"Image Size must be 720X300(W:H)"),
+        constraint=checkCoverImage,
+        required=False,
+    )
+
+    slogan4 = schema.TextLine(
+        title=_(u"Cover Slogan 4"),
+        required=False,
+    )
+
+    url_4 = schema.URI(
+        title=_(u"Url For Slider 4"),
+        description=_(u"Must be include http:// or https://"),
+        required=False,
+    )
+
+    slider5 = NamedBlobImage(
+        title=_(u"Cover Slider 5"),
+        description=_(u"Image Size must be 720X300(W:H)"),
+        constraint=checkCoverImage,
+        required=False,
+    )
+
+    slogan5 = schema.TextLine(
+        title=_(u"Cover Slogan 5"),
+        required=False,
+    )
+
+    url_5 = schema.URI(
+        title=_(u"Url For Slider 5"),
+        description=_(u"Must be include http:// or https://"),
+        required=False,
+    )
+
 
 class IDeviceBudget(Interface):
 
