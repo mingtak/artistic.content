@@ -18,6 +18,13 @@
       />
 
   <browser:page
+      name="school_search"
+      for="*"
+      class=".views.SchoolSearch"
+      permission="zope2.View"
+      />
+
+  <browser:page
       name="school_listing_view"
       for="plone.app.contenttypes.interfaces.IFolder"
       class=".views.SchoolListingView"

@@ -10,6 +10,26 @@ from plone import api
 #from zc.relation.interfaces import ICatalog
 
 
+class SchoolSearch(BrowserView):
+    """ School Search """
+
+    index = ViewPageTemplateFile('template/school_search.pt')
+
+    def __call__(self):
+        context = self.context
+        request = self.request
+        response = request.response
+        portal = api.portal.get()
+        catalog = context.portal_catalog
+
+        self.key = request.form.get('key')
+        if not self.key:
+            response.redirect('%s/welcome/artistic' % portal.absolute_url())
+            return
+        self.brain = catalog({'Type':'SchoolInfo', 'Title':self.key})
+        return self.index()
+
+
 class Go_To_School_Term(BrowserView):
     """ Go_To_School_Term """
 
