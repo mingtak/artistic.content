@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-05-12 00:21+0000\n"
+"POT-Creation-Date: 2016-10-12 15:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,9 +168,14 @@ msgid "Email Address"
 msgstr "email信箱"
 
 #: ./browser/template/cover_view.pt:53
+#: ./browser/template/folder_newsandevent.pt:60
 #: ./browser/template/subproject_folder_view.pt:64
 msgid "Event Information"
 msgstr "活動資訊"
+
+#: ./browser/template/subproject_folder_view.pt:160
+msgid "Event Video"
+msgstr "活動影片"
 
 #: ./interfaces.py:475
 msgid "Experitse"
@@ -237,6 +242,7 @@ msgid "Kinmen County"
 msgstr "金門縣"
 
 #: ./browser/template/cover_view.pt:19
+#: ./browser/template/folder_newsandevent.pt:26
 #: ./browser/template/subproject_folder_view.pt:28
 msgid "Latest News"
 msgstr "最新消息"
@@ -362,6 +368,7 @@ msgid "Public or Private School"
 msgstr "公立或私立學校"
 
 #: ./browser/template/cover_view.pt:74
+#: ./browser/template/folder_newsandevent.pt:81
 #: ./browser/template/subproject_folder_view.pt:87
 msgid "Published"
 msgstr "發佈"
@@ -754,20 +761,13 @@ msgstr ""
 msgid "label_password"
 msgstr ""
 
-#: ./browser/template/folder_newsandevent.pt:30
-msgid "latest Event"
-msgstr "活動資訊"
-
-#: ./browser/template/folder_newsandevent.pt:15
-msgid "latest News"
-msgstr "最新消息"
-
 #. Default: "Cookie authentication is disabled. Login portlet not available."
 #: ./browser/overrides/plone.app.portlets.portlets.login.pt:141
 msgid "login_portlet_disabled"
 msgstr ""
 
 #: ./browser/template/cover_view.pt:43
+#: ./browser/template/folder_newsandevent.pt:50
 #: ./browser/template/subproject_folder_view.pt:54
 msgid "more..."
 msgstr "查看更多..."
