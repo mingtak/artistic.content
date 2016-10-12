@@ -34,7 +34,7 @@ portal = api.portal.get()
                                           'review_state':'published',
                                           'path':'/Artistic/subproject/%s' % context.id},
                                  sort_on='modified', sort_order='reverse')"
-                 repeat="item brain">
+                 repeat="item python:brain[0:10]">
 
 
                                 <div class="widget_timeline_posts">
@@ -68,7 +68,7 @@ portal = api.portal.get()
                                           'review_state':'published',
                                           'path':'/Artistic/subproject/%s' % context.id},
                                  sort_on='modified', sort_order='reverse')"
-                 repeat="item brain">
+                 repeat="item python:brain[0:5]">
 
                         <div class="article_list_view">
 
@@ -115,7 +115,7 @@ portal = api.portal.get()
                                           'review_state':'published',
                                           'path':'/Artistic/subproject/%s' % context.id},
                                  sort_on='modified', sort_order='reverse')"
-                 repeat="item brain">
+                 repeat="item python:brain[0:3]">
 
                         <div class="article_list_view">
 
@@ -145,6 +145,55 @@ portal = api.portal.get()
    style="float:right" class="btn btn_blue"
    i18n:translate="">more...</a>
 </section>
+
+
+
+
+
+
+
+
+
+<section class="cover_news_listing">
+
+                        <!-- Title section -->
+                        <h5 class="title_section" i18n:translate="">Event Video</h5>
+                        <!-- Article list view -->
+                        <div class="article_list_view">
+
+    <tal:getItem define="catalog python:context.portal_catalog;
+                         brain python:catalog({'Type':'Page',
+                                               'review_state':'published',
+                                               'path':'/Artistic/subproject/%s/video' % context.id},
+                                                sort_on='modified', sort_order='reverse')"
+                 repeat="item python:brain[0:3]">
+                                <div class="widget_timeline_posts">
+                                    <div class="item cover">
+                                        <span class="date" tal:content="python:item.modified.strftime('%m / %d')">12 / 11</span>
+                                        <span class="time" tal:content="python:item.modified.strftime('%I:%M %p')">12:15 AM</span>
+                                        <div class="timeline_content">
+                                            <div class="pin_holder"><div class="inside"></div></div>
+                                            <h3><a tal:attributes="href item/getURL" tal:content="item/Title">103學年度高級中等學校藝術才能(資優)班訪視實施計畫</a></h3>
+                                            <span tal:condition="context/@@is_anonymous" tal:content="item/Description"/>
+                                        </div>
+                                    </div>
+                                </div>
+                         
+   </tal:getItem>
+</div>
+<a tal:attributes="href string:${context/absolute_url}/video"
+   style="float:right" class="btn btn_purple"
+   i18n:translate="">more...</a>
+</section>
+
+
+
+
+
+
+
+
+
 
 
 

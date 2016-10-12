@@ -23,7 +23,7 @@
     <tal:getItem define="catalog python:context.portal_catalog;
                     brain python:catalog({'Type':'News Item', 'review_state':'published'},
                                  sort_on='modified', sort_order='reverse')"
-                 repeat="item brain">
+                 repeat="item python:brain[0:5]">
 
 
                                 <div class="widget_timeline_posts">
@@ -55,7 +55,7 @@
     <tal:getItem define="catalog python:context.portal_catalog;
                     brain python:catalog({'Type':'Event', 'review_state':'published'},
                                  sort_on='modified', sort_order='reverse')"
-                 repeat="item brain">
+                 repeat="item python:brain[0:3]">
 
                         <div class="article_list_view">
 
