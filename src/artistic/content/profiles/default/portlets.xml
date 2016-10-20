@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<portlets
+  xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+  i18n:domain="artistic.content">
+
+  <!-- Portlet type registrations -->
+
+  <portlet
+    addview="artistic.content.portlet.school_search.SchoolSearch"
+    title="School search portlet"
+    description="A portlet to rendering School Search."
+    i18n:attributes="title;
+                     description"
+    />
+
+</portlets>

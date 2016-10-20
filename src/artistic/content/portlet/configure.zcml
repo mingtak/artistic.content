@@ -1,0 +1,14 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:plone="http://namespaces.plone.org/plone">
+
+    <plone:portlet
+        name="artistic.content.portlet.school_search.SchoolSearch"
+        interface=".school_search.ISchoolSearch"
+        assignment=".school_search.Assignment"
+        renderer=".school_search.Renderer"
+        addview=".school_search.AddForm"
+        editview=".school_search.EditForm"
+        />
+
+</configure>

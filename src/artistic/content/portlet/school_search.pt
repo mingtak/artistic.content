@@ -1,0 +1,8 @@
+<aside class="widget school_search_portlet">
+<h5>學校搜尋</h5>
+    <form method="get" tal:attributes="action string:${context/absolute_url}/@@school_search">
+        <input size="10" alt="Search Search" placeholder="請輸入學校名稱" name="key" value="" type="text" style="float:left">
+        <input class="context btn_small btn btn_green" name="submit" value="搜尋學校" alt="搜尋學校" type="submit"
+               style="margin-left:10px">
+    </form>
+</aside>
